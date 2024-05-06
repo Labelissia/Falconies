@@ -8,15 +8,19 @@
 </head>
 <body>
     
-    <div class="hamburger-menu">
-        <img src="Images/hamburgermenu.svg" alt="Ikonka hamburger menu">
+    <div id="hamburger" class="hamburger-menu"  onclick="openMenuFunction">
+        <img  onclick="zvetseniHeader()" class="hamburger-menu__img" src="Images/hamburgermenu.svg" alt="Ikonka hamburger menu">
     </div>
-    <header class="header">
+
+    <div id="closingMenu" class="closing-menu">
+        <img  onclick="zmenseni()" class="closing-menu__img" src="Images/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Ikonka hamburger menu">
+    </div>
+    <header id="header" class="header">
         
         <a class="header__logo-container" href="index.html">
                 <img class="header__logo-img" src="Images/FALCONIES (2).svg" alt="">
         </a>
-        <nav class="menu">   
+        <nav class="menu" id="menu">   
             <ul class="menu__list">
                 <li class="menu__item menu__top-item">
                     <a class="menu__link" href="#">Home</a>
@@ -69,5 +73,43 @@
         
     </header>
 
+    
+
+   <script>
+    function zvetseniHeader() {
+      document.getElementById("header").style.height = "100vh";
+      document.getElementById("hamburger").style.display = "none";
+      document.getElementById("closingMenu").style.display = "flex";
+      
+    }
+
+    function zmenseni() {
+      document.getElementById("header").style.height = "60px";
+      document.getElementById("hamburger").style.display = "flex";
+      document.getElementById("closingMenu").style.display = "none";
+      
+    }
+    
+
+const container = document.querySelector(".header");
+
+function checkWidth() {
+  if (window.innerWidth > 600) {
+    document.getElementById("header").style.height = "60px";
+    document.getElementById("hamburger").style.display = "none";
+    document.getElementById("closingMenu").style.display = "none";
+    
+  }
+
+  if (window.innerWidth < 599) {
+    document.getElementById("hamburger").style.display = "flex";
+        
+  }
+  }
+
+document.onload = checkWidth;
+window.onresize = checkWidth;
+    </script>
+    
 </body>
 </html>

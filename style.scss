@@ -6,9 +6,8 @@ html { box-sizing: border-box; }
     padding: 0;
 }
 
-:root {
-    $menu-count: 5;
-}
+
+$menu-count: 5;
 
 
 
@@ -18,7 +17,6 @@ html { box-sizing: border-box; }
     height: 60px;
     background-color: rgb(179, 237, 245);
     display: flex;
-    flex: 0 1 auto;
     gap:50px;
     justify-content: space-between;
     position: fixed;
@@ -29,40 +27,90 @@ html { box-sizing: border-box; }
     &__logo-container {
         position: relative;
         height: 100%;
-        width: fit-content;
-        align-self: center;
+        display: inline-block;
+        align-self: center;        
         cursor: pointer;
-       
+
+        
+        @media only screen and (max-width: 600px) {
+            align-self: flex-start; 
+            height: 60px;           
+        }
     }
     
     &__logo-img {       
-        height: 120%;
-        
+        height: 60px;
+        width: auto;
     }
+
+    @media only screen and (max-width: 1170px) {
+         gap:30px         
+        }
+    
+    @media only screen and (max-width: 600px) {
+        
+        /*height : 100vh;*/
+        flex-direction: column;
+        gap: 0;
+      padding: 5px 20px;
+      justify-content: flex-start;
+  }
 }
 
 .menu {
     display: flex;
     gap: 50px;
     flex: 0 1 auto;
+    justify-content: flex-end;
+    height:100%;
+    width: 100%;
 
     &__list {
         height: 100%;
         list-style: none;
         display: flex;
         align-self: center;
+
+        @media only screen and (max-width: 600px) {
+            height: calc(100% - 60px);
+            flex-direction: column;
+            align-self: flex-start;
+            width: 100%;
+                        
+        }
         
     }
 
     &__top-item {
         position: relative;
         white-space: nowrap;
+
+        @media only screen and (max-width: 600px){
+            border-top: solid 1px rgb(94, 127, 131, 0.3);
+            height: calc(100% / $menu-count);
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            transition: all ease-in-out 100ms;
+            
+        }
+    }
+
+    &__top-item:last-child {        
+        @media only screen and (max-width: 600px){
+            border-bottom: solid 1px rgb(94, 127, 131, 0.3);
+        }
     }
 
     &__link {
-        display: block;
-        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
         height: 100%;
+        width: 100%;
         line-height: 60px;
         font-size: 1.2rem;
         color: black;
@@ -71,11 +119,43 @@ html { box-sizing: border-box; }
         text-decoration: none;
         cursor: pointer;
         transition: all easy-in-out 100ms;
+
+        @media only screen and (max-width: 1170px) {
+            padding: 0 10px;   
+            font-size: 1.1rem;     
+           }
+
+        @media only screen and (max-width: 600px){
+            padding: 0;
+            font-size: 2rem;
+        }
     }
 
+    
     &__link:hover {
         background-color: rgb(94, 127, 131);
         color: rgb(225, 247, 250);
+
+        @media only screen and (max-width: 600px){
+            background-color: transparent;
+            color: black;
+        }
+    }
+    
+    &__sublink {
+
+        @media only screen and (max-width: 600px){
+        background-color: rgba(94, 127, 131, 0.5);
+        color:rgb(179, 237, 245);
+        }
+    }
+
+    &__sublink:hover {      
+
+        @media only screen and (max-width: 600px){
+            background-color: rgba(94, 127, 131);
+            color: rgb(179, 237, 245);
+        }
     }
     
     /*DROPDOWN STYLING START*/
@@ -84,30 +164,67 @@ html { box-sizing: border-box; }
         visibility: hidden;
         opacity: 0;
         display: none;
-        position: absolute;       
+        position: absolute;    
+        background-color: rgb(179, 237, 245); 
         transition: all easy-in-out 100ms;
+
+        @media only screen and (max-width: 600px){
+            display: none;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            position: absolute;
+            bottom: -100%;
+            left: 50px;
+            z-index: 2000;            
+        }
     }
 
     &__subitem:nth-child(2) {
         border-top: solid 1px rgb(94, 127, 131, 0.8);
         border-bottom: solid 1px rgb(94, 127, 131, 0.8);
+
+        @media only screen and (max-width: 600px){
+            border-top: solid 1px rgb(179, 237, 245);
+            border-bottom: solid 1px  rgb(179, 237, 245); 
+            
+        }
     }
 
     &__subitem {
         box-shadow: 3px 3px 3px rgba(0,0,0, 0.1);
+
+        @media only screen and (max-width: 600px){
+           height: fit-content;
+            display: block;
+            background-color: rgba(94, 127, 131);
+            color: rgb(225, 247, 250);
+            
+        }
+        
     }
 
     &__sublink {
         white-space: nowrap;
     }
 
-    &__top-item:hover &__sublist{
+    &__top-item:hover &__sublist, &__top-item:active &__sublist{
         visibility: visible;
         opacity: 1;
-        display: block;        
+        display: block;   
+        
+        @media only screen and (max-width: 600px){
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            position: absolute;
+            top: 60%;
+            left: 0;
+            z-index: 2000;
+            
+        }
     }
 
-     /*DROPDOWN STYLING end*/
+    /*DROPDOWN STYLING end*/
 
      &__sm-link-container {
         display: flex;
@@ -126,16 +243,73 @@ html { box-sizing: border-box; }
      &__sm-img {
         height: 100%;
         width: 60px;
+
+        @media only screen and (max-width: 1170px) {
+            height: 90%;
+            width: 40px;         
+        }
      }
+
+    @media only screen and (max-width: 1170px) {
+        gap:30px;         
+       }    
+       
+         
     
     @media only screen and (max-width: 600px) {
 
-    
-}
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+        align-content: stretch;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        
+    }
 
 }
 
 .hamburger-menu {
     
+    display: none;
+    cursor: pointer;
+
+    &__img {
+        height:90%;
+    }
+
+    
+
+    @media only screen and (max-width: 600px){
+
+        display: flex;
+        justify-content: center;  
+        align-items: center;      
+        height: 60px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        z-index: 200;
+    }
 }
 
+.closing-menu {
+    display: none;
+    cursor: pointer;
+    
+    justify-content: center;  
+    align-items: center;      
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 200;
+
+    &__img {
+        height:80%;
+    }           
+    
+}
