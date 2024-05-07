@@ -1,0 +1,53 @@
+@use 'variables';
+
+.footer {
+    width: 100%;       
+    box-shadow: 3px -3px 3px rgba(0,0,0, 0.1);   
+    color: variables.$c-white;
+   
+    &__claim-container {
+        width: 100%;
+        height:240px;
+        padding: 20px 10px;
+        background-image: url("/images/footer_small.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 40px;      
+    }
+
+    &__claim-text {
+        
+        font-family: variables.$f-claims;
+       /* background-color: variables.$c-primary-dark;*/
+    }
+
+    &__img {
+        display: block;
+        width: 100%;   
+        
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:60px;
+        width: 100%;
+        height: 60px;
+        padding: 0 50px;
+        background-image: linear-gradient( variables.$c-primary-lightdark , variables.$c-primary-dark 30% );       
+        
+        
+    }
+
+    &__icon {
+        height:100%;
+    }
+}   

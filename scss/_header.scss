@@ -1,0 +1,57 @@
+@use 'variables';
+
+.header {
+    width: 100%;
+    padding: 0 20px 0 30px;
+    height: 60px;
+    background-color: variables.$c-primary;
+    display: flex;
+    gap:50px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.1);
+
+    &__mobile-top-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-container {
+        position: relative;
+        height: 100%;
+        display: inline-block;
+        align-self: center;        
+        cursor: pointer;
+
+        
+        @media only screen and (max-width: 600px) {
+            align-self: flex-start; 
+            height: 60px;           
+        }
+    }
+    
+    &__logo-img {       
+        height: 60px;
+        width: auto;
+        padding-left: 20px;
+    }
+
+    @media only screen and (max-width: 1170px) {
+         gap:30px         
+        }
+    
+    @media only screen and (max-width: 1170px) {
+        gap:30px         
+    }
+    
+    @media only screen and (max-width: 600px) {
+        
+        /*height : 100vh;*/
+        flex-direction: column;
+        gap: 0;
+      padding: 0;
+      justify-content: flex-start;
+  }
+}
