@@ -309,7 +309,7 @@
   display: block;
   width: 100%;
 }
-.footer__content {
+.footer__info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,6 +321,7 @@
 }
 .footer__icon {
   height: 100%;
+  width: auto;
 }
 
 html {
@@ -479,4 +480,25 @@ h2 {
 .article-thumbnail {
   width: 100%;
   flex: 0 0 calc((100% - 40px) / 3);
+  position: relative;
+}
+.article-thumbnail__text-container {
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  bottom: 15%;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-left: 20px;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.252);
+}
+.article-thumbnail__text {
+  color: rgb(225, 247, 250);
+  font-size: 2rem;
+  border: 1px solid white;
+  text-align: center;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */

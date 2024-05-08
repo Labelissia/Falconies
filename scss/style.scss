@@ -70,6 +70,7 @@
     align-items: center;
     gap:30px;
     margin-bottom: 50px;
+    
 
     &__list {
     width: 70%;
@@ -78,15 +79,44 @@
     flex-direction: column;
     gap: 20px;
     overflow: visible;
+    
+    
     }
 
     &__title {
         line-height: 10vh;
-    }
+    } 
+
+   
 }
+
 
 .article-thumbnail {
     width: 100%; 
     flex: 0 0 calc((100% - 40px) / 3);
+    position: relative;
+
+    &__text-container {
+        position: absolute;
+        width: 90%;
+        height: 30%;
+        bottom:15%;
+        left: 5%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-left: 20px;
+        flex-wrap: wrap;
+        background-color: rgba(0, 0, 0, 0.252);
+    }
+
+    &__text {
+        color: variables.$c-hover-font;
+        font-size: 2rem;
+        border: 1px solid white;
+        text-align: center;
+        padding: 10px;
+        
+    }
     
 }
