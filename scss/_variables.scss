@@ -1,6 +1,7 @@
 /*colors*/
 $c-primary: rgb(179, 237, 245);
-$c-secondary:  rgb(94, 127, 131);
+$c-secondary:  rgb(42, 100, 118);
+$c-secondary-dark: rgb(22, 55, 65);
 $c-hover-font: rgb(225, 247, 250);
 $c-list-border: rgb(94, 127, 131, 0.5);
 $c-primary-dark: rgb(24, 35, 36);
@@ -9,7 +10,7 @@ $c-white: white;
 
 
 /*fonts*/
-
+$f-main-font: "Montserrat", sans-serif;
 $f-claims: "Playball", "Montserrat", sans-serif;
 
 $menu-count: 5;
