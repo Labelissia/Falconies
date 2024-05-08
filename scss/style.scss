@@ -11,9 +11,11 @@
 .country {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 20vh 40vh  100vh;
+    grid-template-rows: 8vh 20vh 40vh  110vh;
     justify-items: center;
     align-items: center;
+    padding: 40px 0;
+    gap: 20px;
     
 
     &__list {
@@ -21,7 +23,8 @@
         width: 100%;
         height: 150px;
         justify-content: space-evenly;
-        margin-bottom: 40px;
+        
+        
     }
 
     &__link { 
@@ -51,6 +54,39 @@
         
     }
 
+    &__img-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
    
 
+}
+.most-read {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-bottom: 50px;
+
+    &__list {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: visible;
+    }
+
+    &__title {
+        line-height: 10vh;
+    }
+}
+
+.article-thumbnail {
+    width: 100%; 
+    flex: 0 0 calc((100% - 40px) / 3);
+    
 }

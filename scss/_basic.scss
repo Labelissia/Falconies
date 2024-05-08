@@ -17,7 +17,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} 
 
 h2 {
     font-family: variables.$f-main-font;
@@ -26,8 +26,11 @@ h2 {
     color: variables.$c-secondary;
 }
 
-/*.claim-container { 
+
+.claim-container { 
     position: absolute;
+    top:10%;
+    left:10%;
     display: flex;
     justify-content: center;    
     align-items: center;   
@@ -35,5 +38,9 @@ h2 {
     width: 80%;
     font-family: variables.$f-claims;
     color: variables.$c-white;
-    background-color: ;
-}*/
+    background-color: rgb(0,0,0, 0.3);
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 80px;
+}
