@@ -2,15 +2,20 @@
 $c-primary: rgb(179, 237, 245);
 $c-secondary:  rgb(42, 100, 118);
 $c-secondary-dark: rgb(22, 55, 65);
+$c-secondary-dark-opacity: rgb(22, 55, 65, 0.5);
 $c-hover-font: rgb(225, 247, 250);
+$c-hover-font-opacity: rgb(225, 247, 250, 0.4);
 $c-list-border: rgb(94, 127, 131, 0.5);
+$c-list-border-opacity: rgba(94, 127, 131, 0.241);
 $c-primary-dark: rgb(24, 35, 36);
 $c-primary-lightdark: rgb(44, 61, 63);
 $c-white: white;
 
 
 /*fonts*/
-$f-main-font: "Montserrat", sans-serif;
+$f-main: "Source Sans 3", sans-serif;
+$f-titles: "Montserrat", sans-serif;
+$f-subtitle: "EB Garamond", serif;
 $f-claims: "Playball", "Montserrat", sans-serif;
 
 $menu-count: 5;

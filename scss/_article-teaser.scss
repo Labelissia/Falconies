@@ -1,0 +1,56 @@
+@use 'variables';
+
+
+.article-teaser {
+    display: grid;;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px auto auto auto;
+    gap:20px;
+    justify-items: center;
+    padding-bottom: 40px;
+    background-color: variables.$c-hover-font-opacity;
+
+    &__header {
+        position: relative;
+        width: 100%;
+    }
+
+    &__title {
+        border-bottom: solid 1px variables.$c-primary;
+        padding-bottom: 10px;
+    }
+
+    &__content {
+        text-align: center;
+        padding: 20px 20px 0 20px;
+    }
+
+    &__date {
+        padding-top: 10px;
+        color: variables.$c-secondary;
+    }
+
+    &__text {
+        padding:30px 0 10px 0;
+    }
+
+    &__link {
+        color: variables.$c-secondary;
+        height: 100%;  
+        padding: 5px 0;
+              }
+
+    &__categories {
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        border-top: 1px solid variables.$c-list-border-opacity;
+        border-bottom: 1px solid variables.$c-list-border-opacity;
+    }
+
+}
+
+
+

@@ -3,24 +3,25 @@
 .hero {
     width: 100%;
     height: 100vh;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    overflow: hidden;
 
-    &__img {
-        display: block;
-        width:100%;
-        height: 100%;
-        object-fit: cover;
+    @media only screen and (min-width:601px){
+        height:420px;
+        margin-top: 60px;
     }
 
     &__claim-container{
         position: absolute;
         top:15%;
-        left:5%;
+        left:10%;
         display: flex;
         flex-direction: column;
-        height: 70%;
-        width:90%;
+        height: 80%;
+        width:80%;
         justify-content: center;
         align-items: center;
        
@@ -29,23 +30,32 @@
     } 
 
     &__logo-container {
-        flex: 0 0 25%;
+        height:200px;
+        display: flex;
+        align-items: flex-end;
     }
 
     
     &__claim {
         
         font-family: variables.$f-claims;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
         font-weight: 400;
-        
+
+        @media only screen and (min-width:601px){
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap:5px;
+            height: 100px;
+        }       
         
     }
 
     &__claim--smaller {
         font-size: 2.5rem;
-        font-weight: 200;
+        font-weight: 100;
            }
 } 
 

@@ -7,21 +7,21 @@ title: Falconies
     <picture >
         <source media="(max-width:600px)" srcset="/images/main_small.jpg 600w, /images/main_bigger_orez.jpg 100w, /images/main_superlarge_orez.jpg 1267w">
         <source  media="(min-width:601px)" srcset="/images/main_middle.jpg 920w, /images/main_big.jpg 1200w, /images/main_bigger.jpg 2000w, /images/_mainsuperlarge.jpg 2500w">
-        <img class="hero__img" sizes="100vh" src="/images/main_big.jpg" alt="obrázek pobřeží">
+        <img class="hero__img" src="/images/main_big.jpg" alt="obrázek pobřeží">
     </picture>
     <div class="hero__claim-container">
         <div class="hero__logo-container">
             <img class="hero__logo" src="/images/logo-white-justVan.svg" alt="Ikonka karavanu">
         </div>
         <h1 class="hero__claim">
-            Vydejte se <br>
+            <span>Vydejte se </span><br>
             <span class="hero__claim--smaller">s námi</span><br>  
-            na cestu!
+            <span>cestu!</span> 
         </h1> 
     </div>
 </hero> 
 
-<section class="overview">
+
     <div class="country">
         <h2 class="country__title title">Kam to bude</h2>
         <div class="country__list">
@@ -37,36 +37,85 @@ title: Falconies
             </div>
         </div>    
         
-        <aside class="most-read">
-            <h2 class="most-read__title title">Nejčtenější</h2>
-            
-                <div class="most-read__list">
-                    
-                    <div class="article-thumbnail">
-                        <img src="/Images/main_big.jpg" alt="">
-                        <div class="article-thumbnail__text-container">
-                            <p class="article-thumbnail__text">Pobřeží červené žuly</p>
-                        </div>                
-                    </div>
-                    <div class="article-thumbnail">
-                        <img src="/Images/temp/7_IMG_0856 (39).JPG" alt="">
-                        <div class="article-thumbnail__text-container">
-                            <p class="article-thumbnail__text">Nedostupný Koňský maják</p>
-                        </div>                
-                    </div>
-                    <div class="article-thumbnail">
-                        <img src="/Images/krystof/krystof_first_small.jpg" alt="">
-                         <div class="article-thumbnail__text-container">
-                            <p class="article-thumbnail__text">Náš Kryštof</p>
-                         </div>                  
-                    </div>
-                
-                </div>
-           
-        </aside> 
+        {% include 'partials/most-read.njk' %}
     </div>
 
+    <article class="article-teaser">
+        <div class="article-teaser__header ">
+            <img class="article-teaser__img" srcset="/Images/pobrezi_zuly/main1_small.jpg 650w, /Images/pobrezi_zuly/main1_medium.jpg 950w, /Images/pobrezi_zuly/main1_big.jpg 1250w, /Images/pobrezi_zuly/main1_large.jpg 2000w, /Images/pobrezi_zuly/main1_superlarge.jpg 2500w" src="/Images/pobrezi_zuly/main1_medium.jpg" alt="Kameny na pobřeží Červené žuly">
+            <div class="article-teaser__title-container claim-container">
+                <h1 class="article-teaser__title ">Pobřeží červené žuly</h1>
+            </div>
+        </div>
 
-</section>
+        <div class="article-teaser__content">
+            <h3 class="article-teaser__caption">Tisíce tvarů a barev, které probouzejí fantazii.</h3>
+            <p class="article-teaser__date"> 3.5.2024</p>
+            <p class="article-teaser__text">Pokud jste vášnivými fotografy a libujete si navíc v zajímavých přírodních tvarech, nechejte si na návštěvu této nádherné oblasti opravdu hodně, hodně času. Na tomto více než třicetikilometrovém úseku Bretaňského pobřeží nenajdete nefotogenické místo.</p>
+        </div>
+        <div class="article-teaser__button-container ">
+            <button class="button button--primary"><a href="#">Tenhle článek mne zajímá</a></button>
+        </div>
+        <div class="article-teaser__categories">
+            <a class="article-teaser__link" href="#">Francie</a> 
+            <a class="article-teaser__link" href="#">Příroda</a>
+            <a class="article-teaser__link" href="#">Moře</a>
+            <a class="article-teaser__link" href="#">Cestování</a>
+        </div>
+
+    </article>
+
+    <article class="article-teaser">
+        <div class="article-teaser__header ">
+            <img class="article-teaser__img" srcset="/Images/Ribadesella/main_small.jpg 650w, /Images/Ribadesella/main_medium.jpg 950w, /Images/Ribadesella/main_big.jpg 1250w, /Images/Ribadesella/main_large.jpg 2000w, /Images/Ribadesella/main_superlarge.jpg 2500w" src="/Images/Ribadesella/main_middle.jpg" alt="Výhled na Španělské město Ribadesella">
+            <div class="article-teaser__title-container claim-container">
+                <h1 class="article-teaser__title ">Městečko Ribadesella</h1>
+            </div>
+        </div>
+
+        <div class="article-teaser__content">
+            <h3 class="article-teaser__caption">Letovisko s dlouhou pláží na pozadí hor a skvělé místo pro relaxaci.</h3>
+            <p class="article-teaser__date"> 4.5.2024</p>
+            <p class="article-teaser__text">Málokteré jiné místo ve Španělsku může nabídnout tak jedinečnou scenerii jako městečko Ribadesella nacházející se v Asturii u ústí řeky Sella. Na pozadí se tyčí vrcholky pohoří Picos de Europa, jehož svahy se postupně svažují k řece Selle, která dělí městečko na dvě velmi odlišné části a jejíž ústí je lemováno plážemi s bílým pískem.</p>
+        </div>
+        <div class="article-teaser__button-container ">
+            <button class="button button--primary"><a href="#">Tenhle článek mne zajímá</a></button>
+        </div>
+        <div class="article-teaser__categories">
+            <a class="article-teaser__link" href="#">Španělsko</a> 
+            <a class="article-teaser__link" href="#">Příroda</a>
+            <a class="article-teaser__link" href="#">Moře</a>
+            <a class="article-teaser__link" href="#">Cestování</a>
+        </div>
+
+    </article>
+
+    <article class="article-teaser">
+        <div class="article-teaser__header ">
+            <img class="article-teaser__img" srcset="/Images/Faro_de_caballo/main_small.jpg 650w, /Images/Faro_de_caballo/main_medium.jpg 950w, /Images/Faro_de_caballo/main_big.jpg 1250w, /Images/Faro_de_caballo/main_large.jpg 2000w, /Images/Faro_de_caballo/main_superlarge.jpg 2500w" src="/Images/Faro_de_caballo/main_middle.jpg" alt="Maják Faro de Caballo seshora">
+            <div class="article-teaser__title-container claim-container">
+                <h1 class="article-teaser__title ">Nedostupný maják</h1>
+            </div>
+        </div>
+
+        <div class="article-teaser__content">
+            <h3 class="article-teaser__caption">Faro de caballo, neboli koňský maják je kouzelné místo skryté mezi pobřežními útesy</h3>
+            <p class="article-teaser__date"> 8.5.2024</p>
+            <p class="article-teaser__text">Faro de Caballo se nachází na úpatí hory Buciero  a svou polohou nabízí jeho návštěva jedinečný zážitek s dechberoucími výhledy na moře a útesy. Nenechte se jeho lehkou nedostupností odradit, atmosféra tohoto místa Vám vynaložené úsilí plně vynahradí.</p>
+        </div>
+        <div class="article-teaser__button-container ">
+            <button class="button button--primary"><a href="#">Tenhle článek mne zajímá</a></button>
+        </div>
+        <div class="article-teaser__categories">
+            <a class="article-teaser__link" href="#">Španělsko</a> 
+            <a class="article-teaser__link" href="#">Příroda</a>
+            <a class="article-teaser__link" href="#">Moře</a>
+            <a class="article-teaser__link" href="#">Cestování</a>
+        </div>
+
+    </article>
+
+
+
 
 
