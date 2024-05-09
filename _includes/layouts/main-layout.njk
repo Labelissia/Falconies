@@ -111,6 +111,8 @@
         const menu = document.querySelector(".menu");
         const header = document.querySelector(".header");
        
+
+
         const hamburgerMenu = document.querySelector(".hamburger-menu");
         const closingMenu = document.querySelector(".closing-menu");
 
@@ -133,10 +135,14 @@
 
         function checkWidth() {
         if (window.innerWidth > 600) {
-            document.getElementById("header").style.height = "60px";
+            document.getElementById("header").style.height = "120px";
             document.getElementById("hamburger").style.display = "none";
             document.getElementById("closingMenu").style.display = "none";
             
+        }
+
+        and if (window.innerWidth > 900) {
+            document.getElementById("header").style.height = "60px";
         }
 
         else {
