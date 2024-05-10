@@ -615,4 +615,41 @@ a {
   padding: 0 10px;
   border-top: 1px solid rgba(94, 127, 131, 0.241);
   border-bottom: 1px solid rgba(94, 127, 131, 0.241);
+}
+
+.article-main {
+  /* margin: 90px 0;
+   padding: 0 20px;*/
+}
+
+.article {
+  width: 100%;
+  margin: 60px 0;
+}
+.article__hero {
+  width: 100%;
+  height: 40vh;
+  display: inline-block;
+  position: relative;
+}
+.article__caption {
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgb(42, 100, 118);
+  margin: 20px 0;
+}
+.article__date {
+  color: rgba(22, 55, 65, 0.5);
+  font-size: 0.9rem;
+  text-align: right;
+  margin: 10px 0;
+}
+.article__perex {
+  font-weight: bold;
+}
+.article__content {
+  padding: 0 20px;
+}
+.article p {
+  margin: 20px 0;
 }/*# sourceMappingURL=style.css.map */

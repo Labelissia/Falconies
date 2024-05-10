@@ -1,14 +1,30 @@
 ---
 layout: layouts/main.njk
-title: Falconies
+title: Městečko Ribadesella
 ---
 
 {% include 'partials/header.njk' %}
 
-    <main class="main">
+    <main class="article-main">
 
-        {{content | safe }}
+        <article class="article">
+            <hero class="article__hero">
+                <img class="article__main-img" srcset="/Images/Ribadesella/main_small.jpg 650w, /Images/Ribadesella/main_medium.jpg 950w, /Images/Ribadesella/main_big.jpg 1250w, /Images/Ribadesella/main_large.jpg 2000w, /Images/Ribadesella/main_superlarge.jpg 2500w" src="/Images/Ribadesella/main_middle.jpg" alt="Výhled na Španělské město Ribadesella">
+                <div class="article__title-container claim-container">
+                   <h1 class="article__title"> {{title}}</h1>
+                </div>
+            </hero>
 
+            <section class="article__content">
+                <p class="article__date">Publikováno {{page.date.toLocaleString('cs-CZ')}} </p>
+                <h3 class="article__caption"> {{caption}} </h3>
+                <p class="article__perex"> {{perex}} </p>
+
+                {{content | safe }}
+            </section>
+
+
+        </article>
     </main>
 
     
