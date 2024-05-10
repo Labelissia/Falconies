@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playball&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+   
+  
+
+    
+    
+   <script>
+
+
+        const menu = document.querySelector(".menu");
+        const header = document.querySelector(".header");
+       
+
+
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const closingMenu = document.querySelector(".closing-menu");
+
+        hamburgerMenu.onclick = function() {
+        document.getElementById("header").style.height = "100vh";
+        document.getElementById("hamburger").style.display = "none";
+        document.getElementById("closingMenu").style.display = "flex";
+        
+        }
+
+
+        closingMenu.onclick = function() {
+        document.getElementById("header").style.height = "60px";
+        document.getElementById("hamburger").style.display = "flex";
+        document.getElementById("closingMenu").style.display = "none";
+        
+        }
+        
+        const container = document.querySelector(".header");
+
+        function checkWidth() {
+        if (window.innerWidth > 600) {
+            document.getElementById("header").style.height = "60px";
+            document.getElementById("hamburger").style.display = "none";
+            document.getElementById("closingMenu").style.display = "none";
+            
+        }
+
+
+        else {
+            document.getElementById("hamburger").style.display = "flex";
+            document.getElementById("header").style.height = "60px";
+                
+        }
+        }
+
+        document.onload = checkWidth;
+        window.onresize = checkWidth;
+    </script>
+    
+
+
+</body>
+</html>
