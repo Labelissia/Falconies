@@ -1,0 +1,21 @@
+---
+layout:layouts/destinace.njk
+title: Spanelsko
+---
+
+<h1>Španělsko</h1>
+
+<h2>
+    Seznam článků
+</h2>
+
+    {% for prispevky in collections.spanelsko | reverse %}   
+
+        <h2> {{prispevky.data.title}}</h2>
+        <p>{{prispevky.date.toLocaleString(cs-CZ)}}</p>
+        <p>{{prispevky.data.perex}}</p>
+        <p><a href="{{ prispevek.url }}"> Přečíst celý článek </a></p>
+        <img src="/images/{{prispevek.data.foto}}">
+
+    {% endfor %}
+    

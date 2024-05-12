@@ -10,7 +10,8 @@ html { box-sizing: border-box; }
 
 body {
     font-family: variables.$f-main;
-    color : variables.$c-primary-dark
+    color : variables.$c-primary-dark;
+    background-color: variables.$c-hover-font-opacity;
 }
 
 img {
@@ -47,6 +48,7 @@ a {
     border: none;
     background:none;
     display: inline-block;
+    color: variables.$c-primary-dark;
 }
 
 .claim-container { 
@@ -71,12 +73,8 @@ a {
 
 .button {
     height: 50px;
-    padding: 10px;
-    color: variables.$c-primary;
-    background-color: variables.$c-primary;
-    border-radius: 30px;
-    border-color: variables.$c-list-border;
-    box-shadow: 3px 3px 10px variables.$c-secondary-dark-opacity;
+    padding: 10px;    
+    border-radius: 30px;        
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,15 +82,34 @@ a {
     cursor: pointer;
 }
 
-.button:hover { 
+.button--primary {
+    color: variables.$c-primary;
+    background-color: variables.$c-primary;
+    border: solid 1px variables.$c-list-border;
+    box-shadow: 3px 3px 10px variables.$c-secondary-dark-opacity;
+
+    &__link {
+        color: variables.$c-primary-dark;
+    }
+}
+
+.button--secondary {
+    background-color: transparent;
+    border: solid 1px variables.$c-primary; 
+    box-shadow: 0px 0px 10px variables.$c-hover-font-opacity;   
+   
+
+    &__link {
+        color: variables.$c-white;
+    }
+}
+
+.button:hover {  
     background-color: variables.$c-secondary;
     color: variables.$c-hover-font;
 }
 
-.button a {
-    color: variables.$c-primary-dark;
-   
-}
+
 
 .button a:hover {
    

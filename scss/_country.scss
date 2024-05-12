@@ -10,6 +10,25 @@
     padding: 40px 0;
     gap: 20px;
     
+    
+    @media only screen and (min-width:1001px){
+        max-width: 80%;
+        margin: 0 auto 30px auto;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 8vh 120px 560px;
+        row-gap: 50px;
+        padding-left: 40px;
+        overflow: hidden;
+        
+        }
+
+    &__title {
+
+        @media only screen and (min-width:1001px){
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+    }
 
     &__list {
         display: flex;
@@ -17,6 +36,11 @@
         height: 150px;
         justify-content: space-evenly;
         
+        @media only screen and (min-width:1001px){
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            height: 120px;
+        }    
         
     }
 
@@ -31,6 +55,12 @@
         line-height: 150px;
         font-size: 1.5rem;
 
+        @media only screen and (min-width: 1001px){
+            line-height: 120px;
+            height: 100%;
+            width:100%;
+            font-size: 1.4rem;
+        }
 
     }
 
@@ -45,6 +75,10 @@
         flex: 0 0 150px;
         box-shadow: 3px 3px 3px variables.$c-list-border;
         
+        @media only screen and (min-width: 1001px){
+            height: 100%;
+            flex: 0 0 120px;
+        }
     }
 
     &__img-container {
@@ -52,6 +86,12 @@
         height: 100%;
         position: relative;
         box-shadow: 5px 0px 10px rgba(0,0,0, 0.2);
+
+        @media only screen and (min-width:1001px){
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+            margin-top: 20px;
+        }   
     }
 
    

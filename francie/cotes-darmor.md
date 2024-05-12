@@ -3,9 +3,9 @@ layout: layouts/article.njk
 title: Pobřeží růžové žuly
 caption: Tisíce tvarů a barev, které probouzejí fantazii.
 perex: Pokud jste vášnivými fotografy a libujete si navíc v zajímavých přírodních tvarech, nechejte si na návštěvu této nádherné oblasti opravdu hodně, hodně času. Na tomto více než třicetikilometrovém úseku Bretaňského pobřeží nenajdete nefotogenické místo.
-foto: main_medium.jpg
-alt: Výhled na Španělské město Ribadesella
-tags: ['article', 'spanelsko', 'cestovani' , 'pobrezi', 'priroda']
+foto: pobrezi_zuly/main1_medium.jpg
+alt: Hromada kamení na pozadí moře
+tags: spanelsko
 ---
 
 Pokud jste vášnivými fotografy a libujete si navíc v zajímavých přírodních tvarech, nechejte si na návštěvu této nádherné oblasti opravdu hodně, hodně času. Na tomto více než třicetikilometrovém úseku Bretaňského pobřeží nenajdete nefotogenické místo.

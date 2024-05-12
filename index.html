@@ -3,50 +3,18 @@ layout: layouts/home.njk
 title: Falconies
 ---
 
+{% include 'partials/home-hero.njk' %}
 
-
-<hero class="hero">
-    <picture >
-        <source media="(max-width:600px)" srcset="/images/main_small.jpg 600w, /images/main_bigger_orez.jpg 100w, /images/main_superlarge_orez.jpg 1267w">
-        <source  media="(min-width:601px)" srcset="/images/main_middle.jpg 920w, /images/main_big.jpg 1200w, /images/main_bigger.jpg 2000w, /images/_mainsuperlarge.jpg 2500w">
-        <img class="hero__img" src="/images/main_big.jpg" alt="obrázek pobřeží">
-    </picture>
-    <div class="hero__claim-container">
-        <div class="hero__logo-container">
-            <img class="hero__logo" src="/images/logo-white-justVan.svg" alt="Ikonka karavanu">
-        </div>
-        <h1 class="hero__claim">
-            <span>Vydejte se </span><br>
-            <span class="hero__claim--smaller">s námi</span><br>  
-            <span>cestu!</span> 
-        </h1> 
-    </div>
-</hero> 
-
-
-    <div class="country">
-        <h2 class="country__title title">Kam to bude</h2>
-        <div class="country__list">
-            <div class="country__item"><a class="country__link" href="#">Španělsko</a></div>
-            <div class="country__item"><a class="country__link" href="#">Francie</a></div>
-            <div class="country__item"><a class="country__link" href="#">Polsko</a></div>
-        </div>
-        <div class="country__img-container">
-            <img class="coutry__img" srcset="/mages/country_small.jpg 620w, /images/country_medium.jpg 900w, /images/country_big.jpg 1500w, /images/country_large.jpg 2000w" src="/images/country_medium.jpg" alt="Pobřeží s palmou">
-            <div class="claim-container">
-                <p>Všude je krásně, <br>
-                tak proč sedět doma?!</p>
-            </div>
-        </div>    
-        
-        {% include 'partials/most-read.njk' %}
-    </div>
+{% include 'partials/country.njk' %}
 
     <article class="article-teaser">
         <div class="article-teaser__header ">
             <img class="article-teaser__img" srcset="/Images/pobrezi_zuly/main1_small.jpg 650w, /Images/pobrezi_zuly/main1_medium.jpg 950w, /Images/pobrezi_zuly/main1_big.jpg 1250w, /Images/pobrezi_zuly/main1_large.jpg 2000w, /Images/pobrezi_zuly/main1_superlarge.jpg 2500w" src="/Images/pobrezi_zuly/main1_medium.jpg" alt="Kameny na pobřeží Červené žuly">
             <div class="article-teaser__title-container claim-container">
                 <h1 class="article-teaser__title ">Pobřeží červené žuly</h1>
+                <h3 class="article-teaser__caption--desktop">Tisíce tvarů a barev, které probouzejí fantazii.</h3>
+                <button class="button button--secondary article-teaser__button"><a clas="article-teaser__link" href="#">Tenhle článek mne zajímá</a></button>
+
             </div>
         </div>
 
@@ -56,7 +24,7 @@ title: Falconies
             <p class="article-teaser__text">Pokud jste vášnivými fotografy a libujete si navíc v zajímavých přírodních tvarech, nechejte si na návštěvu této nádherné oblasti opravdu hodně, hodně času. Na tomto více než třicetikilometrovém úseku Bretaňského pobřeží nenajdete nefotogenické místo.</p>
         </div>
         <div class="article-teaser__button-container ">
-            <button class="button button--primary"><a href="#">Tenhle článek mne zajímá</a></button>
+            <button class="button button--primary"><a clas="button--primary__link" href="#">Tenhle článek mne zajímá</a></button>
         </div>
         <div class="article-teaser__categories">
             <a class="article-teaser__link" href="#">Francie</a> 
@@ -67,20 +35,20 @@ title: Falconies
 
     </article>
 
-    <article class="article-teaser">
-        <div class="article-teaser__header ">
+    <article class="article-teaser article-teaser--right">
+        <div class="article-teaser__header article-teaser--right__header">
             <img class="article-teaser__img" srcset="/Images/Ribadesella/main_small.jpg 650w, /Images/Ribadesella/main_medium.jpg 950w, /Images/Ribadesella/main_big.jpg 1250w, /Images/Ribadesella/main_large.jpg 2000w, /Images/Ribadesella/main_superlarge.jpg 2500w" src="/Images/Ribadesella/main_middle.jpg" alt="Výhled na Španělské město Ribadesella">
             <div class="article-teaser__title-container claim-container">
                 <h1 class="article-teaser__title ">Městečko Ribadesella</h1>
             </div>
         </div>
 
-        <div class="article-teaser__content">
+        <div class="article-teaser__content article-teaser--right__content">
             <h3 class="article-teaser__caption">Letovisko s dlouhou pláží na pozadí hor a skvělé místo pro relaxaci.</h3>
-            <p class="article-teaser__date"> 4.5.2024</p>
+            <p class="article-teaser__date "> Publikováno 4.5.2024</p>
             <p class="article-teaser__text">Málokteré jiné místo ve Španělsku může nabídnout tak jedinečnou scenerii jako městečko Ribadesella nacházející se v Asturii u ústí řeky Sella. Na pozadí se tyčí vrcholky pohoří Picos de Europa, jehož svahy se postupně svažují k řece Selle, která dělí městečko na dvě velmi odlišné části a jejíž ústí je lemováno plážemi s bílým pískem.</p>
         </div>
-        <div class="article-teaser__button-container ">
+        <div class="article-teaser__button-container article-teaser--right__button--container">
             <button class="button button--primary"><a href="#">Tenhle článek mne zajímá</a></button>
         </div>
         <div class="article-teaser__categories">
@@ -97,6 +65,9 @@ title: Falconies
             <img class="article-teaser__img" srcset="/Images/Faro_de_caballo/main_small.jpg 650w, /Images/Faro_de_caballo/main_medium.jpg 950w, /Images/Faro_de_caballo/main_big.jpg 1250w, /Images/Faro_de_caballo/main_large.jpg 2000w, /Images/Faro_de_caballo/main_superlarge.jpg 2500w" src="/Images/Faro_de_caballo/main_middle.jpg" alt="Maják Faro de Caballo seshora">
             <div class="article-teaser__title-container claim-container">
                 <h1 class="article-teaser__title ">Nedostupný maják</h1>
+                <h3 class="article-teaser__caption--desktop">Tisíce tvarů a barev, které probouzejí fantazii.</h3>
+                <button class="button button--secondary article-teaser__button"><a clas="article-teaser__link" href="#">Tenhle článek mne zajímá</a></button>
+
             </div>
         </div>
 
@@ -117,6 +88,30 @@ title: Falconies
 
     </article>
 
+    <article class="article-teaser article-teaser--left">
+        <div class="article-teaser__header article-teaser--left__header">
+            <img class="article-teaser__img" srcset="/Images/Ribadesella/main_small.jpg 650w, /Images/Ribadesella/main_medium.jpg 950w, /Images/Ribadesella/main_big.jpg 1250w, /Images/Ribadesella/main_large.jpg 2000w, /Images/Ribadesella/main_superlarge.jpg 2500w" src="/Images/Ribadesella/main_middle.jpg" alt="Výhled na Španělské město Ribadesella">
+            <div class="article-teaser__title-container claim-container">
+                <h1 class="article-teaser__title ">Městečko Ribadesella</h1>
+            </div>
+        </div>
+
+        <div class="article-teaser__content article-teaser--left__content">
+            <h3 class="article-teaser__caption">Letovisko s dlouhou pláží na pozadí hor a skvělé místo pro relaxaci.</h3>
+            <p class="article-teaser__date "> Publikováno 4.5.2024</p>
+            <p class="article-teaser__text">Málokteré jiné místo ve Španělsku může nabídnout tak jedinečnou scenerii jako městečko Ribadesella nacházející se v Asturii u ústí řeky Sella. Na pozadí se tyčí vrcholky pohoří Picos de Europa, jehož svahy se postupně svažují k řece Selle, která dělí městečko na dvě velmi odlišné části a jejíž ústí je lemováno plážemi s bílým pískem.</p>
+        </div>
+        <div class="article-teaser__button-container article-teaser--left__button--container">
+            <button class="button button--primary"><a href="#">Tenhle článek mne zajímá</a></button>
+        </div>
+        <div class="article-teaser__categories">
+            <a class="article-teaser__link" href="#">Španělsko</a> 
+            <a class="article-teaser__link" href="#">Příroda</a>
+            <a class="article-teaser__link" href="#">Moře</a>
+            <a class="article-teaser__link" href="#">Cestování</a>
+        </div>
+
+    </article>
 
 
 

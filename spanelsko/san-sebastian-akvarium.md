@@ -3,9 +3,9 @@ layout: layouts/article.njk
 title: Akvárium San Sebastian
 caption: Akvárium a oceánografické muzeum San Sebastian nabízí skvělý zážitek pro děti i dospělé.
 perex: Jedním z mnoha lákadel baskické metropole San Sebastian je jednoznačně místní akvárium známé jako "Donostia-San Sebastian Aquarium”. Nachází se v blízkosti přístavu a historické čtvrti Parte Vieja a pro nás to byl jedoznačně nejlepší zážitek v tomto městě. 
-foto: main_medium.jpg
+foto: sebastian_akvarium/main_middle.jpg
 alt: Vnitrek akvaria
-tags: ['article', 'spanelsko', 'cestovani' , 'pobrezi', 'deti']
+tags: spanelsko
 ---
 
 V několika patrech nabízí detailní pohled do mořského života i do historie námořního obchodu a rybolovu. Ve více než 30 akváriích rozložených ve dvou patrech můžete obdivovat jednak Kantabrijsko-Atlantický mořský život tak i tropické podmořské živočichy. 
@@ -16,8 +16,8 @@ Nejatraktivnějším místem akvária je podmořský tunel, kde můžete prochá
 
 Je zde ještě jedna velká nádrž plná barevných ryb, naproti které je několik řad sedadel, kde se můžete usadit jako v kině a nechat se okouzlovat všemi těmi nádhernými tvary a barvami.
 
-Vstupenky můžete získat jak na stránkách Akvária online, tak přímo na místě a vyjdou vás na  14EUR na osobu. 
-<a href="https://tienda.aquariumss.com/">https://tienda.aquariumss.com/</a>
+Vstupenky můžete získat jak na <a href="https://tienda.aquariumss.com/">stránkách Akvária</a> online, tak přímo na místě a vyjdou vás na  14EUR na osobu. 
+
 
 Trocha historie - V září 1908 byla založena Guipúzcoova oceánografická společnost s cílem rozvíjet a posilovat vědeckou disciplínu Oceánografii a také zlepšit rybolov a život rybářů. 
 

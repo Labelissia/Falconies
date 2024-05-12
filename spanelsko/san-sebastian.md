@@ -3,9 +3,9 @@ layout: layouts/article.njk
 title: San Sebastian
 caption: Metropole, kde se snoubí historie a moderní městský život spolu s přírodou a oceánem.
 perex: Pokud jste milovníky měst s bohatou historií a zároveň si libujete v dobrém jídle, je San Sebastián pro Vás naprosto ideální destinací. Nabízí bohatou nabídku kulturního vyžití (za nás musíme vypíchnout místní mořské akvárium), množství obchůdků a restaurací, ale také krásné výhledy a několik pláží ve svém okolí. 
-foto: main_medium.jpg
+foto: San_sebastian/main_middle.jpg
 alt: Výhled na San Sebastian
-tags: ['article', 'spanelsko', 'cestovani' , 'pobrezi']
+tags: spanelsko
 ---
 
 San Sebastián leží v severním Španělsku v baskické oblasti necelých 20 km od francouzské hranice a díky svým historickým památkám, bohaté kulturní nabídce a pestré gatronomii patří mezi nejnavštěvovanější místa ve Španělsku. 
@@ -16,18 +16,18 @@ V současnosti je San Sebastián kosmopolitní metropolí s více než 180 000 o
 
 #Některé z historických památek, které stojí za to vidět: 
 
--Katedrála Catedral del Buen Pastor de San Sebastián 
--Kongresové centrum Kursaal
--Kostel Santa María, 
--Kostel San Vicente, 
--Pevnost Castillo de la Mota na vrchu Monte Urgull
--Radnice San Sebastián, leží jižně od přístavu, byla postavena v roce 1887, původně jako kasino
--Palác Miramar, bývalé letní sídlo španělské královské rodiny
--Muzeum San Telmo, etnografické sbírky v budově bývalého kláštera s kaplí s nástěnnými malbami
--Divadlo Teatro Victoria Eugenia, novorenesanční stavba z let 1910–1912
--Most María Cristina, stavba z roku 1905
--(zdroj - wikipedie)
--Velkým lákadlem je také velké akvárium a oceánografické muzeum.
+- Katedrála Catedral del Buen Pastor de San Sebastián 
+- Kongresové centrum Kursaal
+- Kostel Santa María, 
+- Kostel San Vicente, 
+- Pevnost Castillo de la Mota na vrchu Monte Urgull
+- Radnice San Sebastián, leží jižně od přístavu, byla postavena v roce 1887, původně jako kasino
+- Palác Miramar, bývalé letní sídlo španělské královské rodiny
+- Muzeum San Telmo, etnografické sbírky v budově bývalého kláštera s kaplí s nástěnnými malbami
+- Divadlo Teatro Victoria Eugenia, novorenesanční stavba z let 1910–1912
+- Most María Cristina, stavba z roku 1905
+
+Značným lákadlem je také velké akvárium a oceánografické muzeum. o kterém si můžete víc přečíst <a href="/spanelsko/san-sebastian-akvarium">zde</a>.
 
 Díky svým plážím a příjemnému klimatu je San Sebastián vyhledávaným letním letoviskem. Jeho slavná městská pláž se dvěma plovárnami Playa de la Concha je se svým jemným pískem a výhledem na horské vrcholy ideální pro relaxaci a odpočinek. 
 

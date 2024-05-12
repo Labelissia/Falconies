@@ -10,6 +10,14 @@
     gap:30px;
     margin-bottom: 50px;
     
+    @media only screen and (min-width:1001px){
+        grid-row: 2 / 4;
+        grid-column: 2 / 3;
+        
+        margin-bottom: 0;
+        height: calc(720px - 8vh)
+        
+    } 
 
     &__list {
     width: 70%;
@@ -17,13 +25,22 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    overflow: visible;
     
+    
+    @media only screen and (min-width: 1001px){
+        width: 75%;
+       }   
     
     }
 
     &__title {
         line-height: 10vh;
+
+        @media only screen and (min-width: 1001px) {
+            grid-row: 1 / 2;
+            line-height: 8vh; 
+        }
+        
     } 
 
    
