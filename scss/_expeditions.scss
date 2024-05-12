@@ -1,0 +1,99 @@
+@use 'variables';
+
+
+.expeditions-article{
+
+    &__content {
+        padding: 20px;
+    }
+
+    &__route{
+        text-align: center;
+        font-size: 0.8rem;
+        
+    }
+
+    &__perex {
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    &__members-title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 40px 0 30px 0;
+    }
+ 
+    &__route-title{
+        text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    }
+}
+
+.expedition {
+    margin: 40px 0;
+
+    &__day {
+        margin-top: 25px;
+        font-size: 1.2rem;
+    }
+
+    &__img--left {
+        width:45%;
+        float: right;
+        margin: 30px 0 0px 20px;
+        
+    }    
+
+    &__img--right {
+        width:45%;
+        float: left;
+        margin: 30px 20px 0px 0;
+        
+    }
+}
+
+.expedition p:has( + img){
+    margin-bottom: 0;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;   
+    gap: 40px;
+    padding-left: 50px;
+
+    &__item {
+        display: flex;
+        gap:100px;
+        align-items: center;
+    }
+
+    &__foto-container {
+         flex: 0 0 100px;
+        height: 100px;
+        border: solid 1px;
+        border-radius: 50%;
+        
+        
+    }
+
+    &__foto {
+       border-radius: 50%;
+    }
+
+    &__name {
+        color: variables.$c-secondary-dark;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    &__function {
+        color: variables.$c-secondary;
+        font-weight: 500;
+        font-size: 1rem;
+        font-style: italic;
+    } 
+}
+

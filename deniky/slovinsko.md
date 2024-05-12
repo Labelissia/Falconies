@@ -1,9 +1,9 @@
 ---
-layout: layouts/main.njk
+layout: layouts/expeditions.njk
 title: Expedice Slovinsko
 caption: Z Kostomlátek do Benátek, tam a zase zpátky
 perex: V roce 2017 jsme strávili nádherných 10 dní cestováním po Slovinsku a kousku Itálie. Byl to poměrně dobrodružný výlet, neb to byla první takto velká cesta s naším retro obytňáčkem, Ávinkou a také delší dovolená společně s dětmi. Užili jsme si moře, jezera, města i rakouskou “Hochalpenstrasse” a tak se dá říci, že tato cesta prověřila jak spolehlivost naší Ávinky a automechanické schopnosti hlavního technika této výpravy, tak psychickou odolnost všech členů. 
-foto: 
+foto: /Images/exp_slovinsko/main_small.jpg 600w, /Images/exp_slovinsko/main_big.jpg 900w, /Images/exp_slovinsko/main_large.jpg 1500w, /Images/exp_slovinsko/main.jpg 1920w" src="/Images/exp_slovinsko/main_big.jpg"
 alt: 
 najete: 26766
 zeme: 6
@@ -13,32 +13,56 @@ tags: expedice
 ---
 
 
-Přesná trasa : Kostomlátky - Bratislava - Fertöd (Neziderské jezero) - Maribor - Bledské jezero - Bohyňské jezero - Tolmin - Piran - Grado - Benátky - Dürensee - Kostomlátky 
-
-<div class="members">
-    <div class="members__item">
-        <h4  class="members__name">Jarda</h4>
-        <h5 class="members__function">Hlavní technik, řidič a automechanik</h5>
+<h2 class="expeditions-article__route-title">Přesná trasa :</h2>
+<div class="expeditions-article__content">
+    <p class="expeditions-article__route">Kostomlátky - Bratislava - Fertöd (Neziderské jezero) - Maribor - Bledské jezero - Bohyňské jezero - Tolmin - Piran - Grado - Benátky - Dürensee - Kostomlátky</p> 
+    <h2 class="expeditions-article__members-title">Účastníci zájezdu</h2>
+    <div class="members">
+        <div class="members__item">
+            <div class="members__foto-container">
+                <img class="members__foto" src="/Images/portraits/jarda_small.jpg" alt="Mala portretni fotografie">
+            </div>        
+            <div class="members__description">
+                <h4  class="members__name">Jarda</h4>
+                <h5 class="members__function">Hlavní technik, řidič a automechanik</h5>
+            </div>
+        </div>
+        <div class="members__item">
+            <div class="members__foto-container">
+                <img class="members__foto" src="/Images/portraits/kata_small.jpg" alt="Mala portretni fotografie">
+            </div>
+            <div class="members__description">
+                <h4 class="members__name">Katka</h4>
+                <h5 class="members__function">Hlavní navigátor a tetrisář</h5>
+            </div>
+        </div>
+        <div class="members__item">
+            <div class="members__foto-container">
+                <img class="members__foto" src="/Images/portraits/dan1_small.jpg" alt="Mala portretni fotografie">
+            </div>
+            <div class="members__description">
+                <h4 class="members__name">Dan</h4>
+                <h5 class="members__function">Hlavní pohodář a vypravěč vtipů</h5>
+            </div>
+        </div>
+        <div class="members__item">
+            <div class="members__foto-container">
+                <img class="members__foto" src="/Images/portraits/eli.jpg" alt="Mala portretni fotografie">
+            </div>
+            <div class="members__description">
+                <h4 class="members__name">Eliška</h4>
+                <h5 class="members__function">Hlavní udržovatel pořádku</h5>
+            </div>
+        </div>
     </div>
-    <div class="members__item">
-        <h4 class="members__name">Katka</h4>
-        <h5 class="members__function">Hlavní navigátor a tetrisář</h5>
-    </div>
-    <div class="members__item">
-        <h4 class="members__name">Dan</h4>
-        <h5 class="members__function">hlavní pohodář a vypravěř vtipů</h5>
-    </div>
-    <div class="members__item">
-        <h4 class="members__name">Eliška</h4>
-        <h5 class="members__function">Hlavní udržovatel pořádku</h5>
-    </div>
-</div>
+    <div class="expedition">
 
 Zároveň jsme tak svým způsobem okusili krásu tzv. “pomalého cestování” ….. naše Ávinka jela maximálně rychostí 70 až 80 km/h pokud měla správný sklon vozovky a vítr v zádech.
 Ovšem při delším stoupání jsme byli rádi i za 30km/h. Měli jsme tak dostatek času na obdivování krajiny naslouchání všem zvukům motoru. Zasvěcenci si jistě již umí trochu představit, jaká dobrodružství a výzvy přináší cestování Ávií. Pokud jste se ale nikdy neocitli blíže tomuto skvělému vozidlu a zajímá Vás to více, můžete se těšit na náš článek věnovaný naší Ávince, který pro Vás už připravujeme.
 
 
-<h3>1.den - středa 5.7.2017</h3>
+<img class="expedition__img expedition__img--left" srcset="/Images/exp_slovinsko/den1_small.jpg 400w, /Images/exp_slovinsko/den1_middle.jpg 600w, /Images/exp_slovinsko/den1.jpg 900w" src="/Images/exp_slovinsko/den1.jpg" alt="Západ slunce nad dálnicí">
+<h3 class="expedition__day">1.den - středa 5.7.2017</h3>
 
 Po maximálním úsilí nanosit celou domácnost do Ávinky jsme úspěšně v 15:00 opustili náš dům. Jídla máme tak na dva měsíce, dva týdny dovolené tedy nejspíše přežijeme.ve 20:09 nás vítá Slovensko dramatickou oblohou  a deštěm.
 
@@ -46,7 +70,8 @@ Maďarsko - bouřka přes celé nebe. Děti koukají na film, my na blesky a mod
 
 Ve 22:30 parkujme na jižním konci Neziderského jezera u ptačí rezervace. Obloha se vyčistila a noc je klidná.
 
-<h3>2.den - čtvrtek 6.7.2017 <br>Neziderské jezero</h3>
+<img class="expedition__img expedition__img--right" srcset="/Images/exp_slovinsko/den2_small.jpg 400w, /Images/exp_slovinsko/den2_middle.jpg 600w, /Images/exp_slovinsko/den2_big.jpg 1200w, /Images/exp_slovinsko/den2_large.jpg 1800w" src="/Images/exp_slovinsko/den2_big.jpg" alt="Ávie stojící na louce">
+<h3 class="expedition__day">2.den - čtvrtek 6.7.2017 <br>Neziderské jezero</h3>
 
 Budí nás sluníčko, vítr ženoucí se přes maďarskou pampu a křik divokých hus. Stojíme přímo u jedné z mnoha dřevěných rozhleden, ze kterých je nádherný výhled na jezero a ptačí rezervaci. 
 
@@ -66,7 +91,8 @@ Kolem 19 hodiny přijíždíme do Mariboru. Město nás ničím neuchvátilo, al
 
 Nocujeme na odstavné ploše u silnice, ale výběr nebyl šťastný. nikdo se moc nevyspal.
 
-<h3>3.den - 7.7.2017 <br>Bledské jezero</h3>
+<img class="expedition__img expedition__img--left" srcset="/Images/exp_slovinsko/den3_small.jpg 400w, /Images/exp_slovinsko/den3_middle.jpg 600w, /Images/exp_slovinsko/den3_big.jpg 1200w, /Images/exp_slovinsko/den3_large.jpg 1800w" src="/Images/exp_slovinsko/den3_big.jpg" alt="Jezero Bled">
+<h3 class="expedition__day">3.den - 7.7.2017 <br>Bledské jezero</h3>
 
 Vyrážíme v dešti směr Bledské jezero, kam dorážíme akorát na oběd a zkoušíme místní restauraci s velmi uspokojivým výsledkem. 
 
@@ -78,8 +104,8 @@ Večer jsme koupili maso a přejeli si ho ugrilovat k řece Bohyňce, kde jsme p
 
 Noční klid nám narušil pán, který nás vyhnal z parkoviště, že tam v noci nesmíme parkovat. Přejeli jsme o padesát metrů vedle a šli vesele spát.
 
-
-<h3>4.den - 8.7.2017 <br>Bohyňka, ponor s lososy a Bohyňské jezero</h3>
+<img class="expedition__img expedition__img--right" srcset="/Images/exp_slovinsko/den4_small.jpg 400w, /Images/exp_slovinsko/den4_middle.jpg 600w, /Images/exp_slovinsko/den4_big.jpg 1200w, /Images/exp_slovinsko/den4_large.jpg 1800w" src="/Images/exp_slovinsko/den4_big.jpg" alt="Ávie stojící na parkovišti">
+<h3 class="expedition__day">4.den - 8.7.2017 <br>Bohyňka, ponor s lososy a Bohyňské jezero</h3>
 
 Po ranní kávičce nasazujeme neoprény, zapínáme vodní kamerky a hurá do studených vod Bohyňky. Stupňů věru neměla mnoho, ale zato lososů mnoho. Vždycky jsme přešli kus proti proudu a pak se kus nechali unášet a prohlíželi si a natáčeli krásně zbarvená rybí tělíčka. I Eliška se k ponoru nechala přemluvit.
 
@@ -87,7 +113,8 @@ Když jsme rozmrzli, vydali jsme se k Bohyňskému jezeru, kde jsme chtěli pře
 
 Nocovali jsme tedy opět u řeky Bohyňky na stejném místě , před cedulí u parkovištátka. 
 
-<h3>5.den - 9.7.2017 <br>Den Bohyňské jezero </h3>
+<img class="expedition__img expedition__img--left" srcset="/Images/exp_slovinsko/den5_small.jpg 400w, /Images/exp_slovinsko/den5_middle.jpg 600w, /Images/exp_slovinsko/den5_big.jpg 1200w, /Images/exp_slovinsko/den5_large.jpg 1800w" src="/Images/exp_slovinsko/den5_big.jpg" alt="Snídaně v Ávii">
+<h3 class="expedition__day">5.den - 9.7.2017 <br>Den Bohyňské jezero </h3>
 
 V 7:30 jsme chtěli na dané parkoviště přejet, ale bohužel zrovna přijela hlídka a chtěla 80EU za osobu. Ukecali jsme to na 40EU celkem. Kdybychom vstali o 30minut dříve a přeparkovali, měli bychom to bez pokuty. Další příklady toho, jak je dlouhé spaní škodlivé 🙂
 
@@ -101,7 +128,8 @@ Zdolávání hor jsme završili lanovkou na Vogel - převýšení 957 metru a v�
 
 Nocovali jsme v kempu blízko Tolminu za 40Eu.
 
-<h3>6.den - 10.7.2017 <br>Reka Soča a Skočjanské jeskyně</h3>
+<img class="expedition__img expedition__img--right" srcset="/Images/exp_slovinsko/den6_small.jpg 400w, /Images/exp_slovinsko/den6_middle.jpg 600w, /Images/exp_slovinsko/den6_big.jpg 1200w, /Images/exp_slovinsko/den6_large.jpg 1800w" src="/Images/exp_slovinsko/den6_big.jpg" alt="Řeka Soča">
+<h3 class="expedition__day">6.den - 10.7.2017 <br>Reka Soča a Skočjanské jeskyně</h3>
 
 Po cestě do Skočjanských jeskyní jsme projížděli kolem řeky Soči, která má vzhled krásně azurové aviváže díky vápencovým oblastem, kterými protéká. Nemohli jsme nezastavit na pořádnou koupel. 
 Odpoledne jsme věnovali návštěvě Skočjanských krápníkových jeskyní, kde nás asi nejvíc zaujalo, jak velké jsou. 
@@ -114,18 +142,21 @@ Cesta zpět po nočním pobřeží ve tmě za zvuku přiboje byla nádherná by�
 
 Už při průjezdu Triestem a pohledem na mraky zaparkovaných karavanů nám bylo jasné, žze zde pochodime lépe.
 
-<h3>7.den - 11.7.2017 <br> Grado</h3>
+<img class="expedition__img expedition__img--left" srcset="/Images/exp_slovinsko/den7_small.jpg 400w, /Images/exp_slovinsko/den7_middle.jpg 600w, /Images/exp_slovinsko/den7_big.jpg 1200w, /Images/exp_slovinsko/den7_large.jpg 1800w" src="/Images/exp_slovinsko/den7_big.jpg" alt="Grilování na pláži">
+<h3 class="expedition__day">7.den - 11.7.2017 <br> Grado</h3>
 Vzhledem k tomu, že v Gradu jsme na karavanovém stání za 5EU na den zaparkovali ve dvě noci, nevstávali jsme úplně časně. Dan smutně hlásil, že v průběhu noci zabil asi 15komárů. Velkou část dne jsme strávili na pláži - , dovádění v moři, mušličky, focení a úžasná grilovačka. 
 
 Když se slunce začalo klonit k obzoru, pláž se neuvěřitelně rychle vyprázdnila. Již za chvíli jsme zjistili důvod a co nám síly stačily, jsme prchali ke karavanu před neuvěřitelnými mraky neuvěřitelně hladových komárů. Neznalí situace jsme měli přes den nechané otevřené střešní okno……. další půl hodinu jsem s dětmi seděla na obrubníku schovaná pod dekami a Jarda vystříkával biolitem celé auto…… 
 
-<h3>8.den - 12.7.2017 <br> Grado </h3>
+<img class="expedition__img expedition__img--right" srcset="/Images/exp_slovinsko/den8_small.jpg 400w, /Images/exp_slovinsko/den8_middle.jpg 600w, /Images/exp_slovinsko/den8_big.jpg 1200w, /Images/exp_slovinsko/den8_large.jpg 1800w" src="/Images/exp_slovinsko/den8_big.jpg" alt="Stellplatz v Gradu">
+<h3 class="expedition__day">8.den - 12.7.2017 <br> Grado </h3>
 
 Další den jsme ještě věnovali moři a vlnám, přeplavali na blízký ostrov a našli úžasné úlovky - problémem bylo jen, jak je dostat zpět na pláž, protože v plavkách má člověk přeci jen dost málo úložného místa.
 
 Večer jsme se vydali pěšky do městečka na nějakou dobrou večeři dát si konečně pravou italskou pizzu, na což se Dan těšil už několik dní …. takže si objednal těstoviny . Nicméně tam měli naprosto skvělého platýse, famózní tuňákové carpacio a výborné deserty. Zpět k autu jsme se sotva dovalili a Jarda z posledních sil přejel někam blíže k Benátkám.
 
-<h3>9.den - 13.7.2017 <br>Benátky </h3>
+<img class="expedition__img expedition__img--left" srcset="/Images/exp_slovinsko/den9_small.jpg 400w, /Images/exp_slovinsko/den9_middle.jpg 600w, /Images/exp_slovinsko/den9_big.jpg 1200w, /Images/exp_slovinsko/den9_large.jpg 1800w" src="/Images/exp_slovinsko/den9_big.jpg" alt="Lodičky v Benátkách">
+<h3 class="expedition__day">9.den - 13.7.2017 <br>Benátky </h3>
 
 Užili jsme si snídani na parkovišti na kraji Benátek s výhledem na moře a vyrazili do Benátek. Za nějakýc 10EU na osobu jsme si koupili lístek na vodní taxi, přičemž nás málem podezřívali z únosu dětí, když jsem si nemohla vzpomenout, kolik jim je.
 
@@ -135,7 +166,8 @@ Lodí jsme se svezli na Murado,  ostrov sklářů, kde se již od středověku v
 
 Nocovali jsme na příjemném místě, byť to bylo u silnice. Nicméně tento fakt byl vyvážen pohledem na okolní horské masivy a malebné kaolínové jezírko. 
 
-<h3>10.den  - 14.7.2017 <br>Horský přejezd</h3>
+<img class="expedition__img expedition__img--right" srcset="/Images/exp_slovinsko/den10_small.jpg 400w, /Images/exp_slovinsko/den10_middle.jpg 600w, /Images/exp_slovinsko/den10_big.jpg 1200w, /Images/exp_slovinsko/den10_large.jpg 1800w" src="/Images/exp_slovinsko/den10_big.jpg" alt="Nejvyšší bod rakouské hochalpenstrasse">
+<h3 class="expedition__day">10.den  - 14.7.2017 <br>Horský přejezd</h3>
 
 Po příjemné snídani a procházce kolem jezera jsme pokračovali dále směr domov. Já opět coby pilný navigátor hledala nejlepší cestu domů. 
 
@@ -158,3 +190,5 @@ Tak vlevo sice byl, ale my jeli přímo po oné slavné vysokohorské Grossglock
 Modlení pomohlo a naše zlatá Rozárka ten přejezd přeci jen zvládla i bez alternátoru.  
 
 A byť jsme dojížděli v dost nervózním stavu a s nutným průběžným chlazením a neustálým doléváním vody a v podstatě na jeden zátah ( Jarda se bál, že pokud zastaví, už se mu ji nepodaří na místě rozchodit), přeci jen jsme se šťastně dokodrcali zpět domů.
+    </div>
+</div>
