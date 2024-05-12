@@ -1,6 +1,6 @@
 ---
 layout: layouts/main.njk
-title: Městečko Ribadesella
+
 ---
 
 {% include 'partials/header.njk' %}
@@ -9,7 +9,7 @@ title: Městečko Ribadesella
 
         <article class="article">
             <hero class="article__hero">
-                <img class="article__main-img" srcset="/Images/Ribadesella/main_small.jpg 650w, /Images/Ribadesella/main_medium.jpg 950w, /Images/Ribadesella/main_big.jpg 1250w, /Images/Ribadesella/main_large.jpg 2000w, /Images/Ribadesella/main_superlarge.jpg 2500w" src="/Images/Ribadesella/main_middle.jpg" alt="Výhled na Španělské město Ribadesella">
+                <img class="article__main-img" srcset="{{ foto }}" alt="{{ alt }}">
                 <div class="article__title-container claim-container">
                    <h1 class="article__title"> {{title}}</h1>
                 </div>

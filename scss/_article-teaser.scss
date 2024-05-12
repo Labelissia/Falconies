@@ -8,10 +8,12 @@
     gap:20px;
     justify-items: center;
     padding-bottom: 40px;
+    margin-top: 40px;
     
     
     @media only screen and (min-width:1001px){
         grid-template-rows: 500px;
+        margin-top: 0;
     }
 
     &__header {
@@ -110,7 +112,7 @@
 .article-teaser--right {
 
     @media only screen and (min-width:1001px){
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50px auto auto 50px 50px;
@@ -121,6 +123,15 @@
         @media only screen and (min-width:1001px){
             grid-column: 2 / 3;
             grid-row: 1 / 5;
+        }
+    }
+
+    &__title {
+        @media only screen and (min-width:1001px){
+            font-size: 3rem;
+        }
+        @media only screen and (min-width:1300px){
+            font-size: 4rem;
         }
     }
 
@@ -152,7 +163,7 @@
 .article-teaser--left {
 
     @media only screen and (min-width:1001px){
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50px auto auto 50px 50px;
