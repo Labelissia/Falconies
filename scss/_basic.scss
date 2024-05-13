@@ -53,7 +53,8 @@ a {
     border: none;
     background:none;
     display: inline-block;
-    color: variables.$c-primary-dark;
+    color: unset;
+    
 }
 
 .claim-container { 
@@ -92,28 +93,31 @@ a {
     background-color: variables.$c-primary;
     border: solid 1px variables.$c-list-border;
     box-shadow: 3px 3px 10px variables.$c-secondary-dark-opacity;
+    color: variables.$c-secondary;
 
     &__link {
         color: variables.$c-primary-dark;
     }
 }
 
-.button--secondary {
-    background-color: transparent;
-    border: solid 1px variables.$c-primary; 
-    box-shadow: 0px 0px 10px variables.$c-hover-font-opacity;   
-   
 
-    &__link {
-        color: variables.$c-white;
-    }
-}
 
 .button:hover {  
     background-color: variables.$c-secondary;
     color: variables.$c-hover-font;
 }
 
+.button--secondary {
+    background-color: transparent;
+    border: solid 1px variables.$c-primary; 
+    box-shadow: 0px 0px 10px variables.$c-hover-font-opacity;   
+    color: variables.$c-white;
+    
+}
+.button--secondary:hover {
+    background-color: variables.$c-white-opacity;
+        color: variables.$c-go;
+}
 
 
 .button a:hover {

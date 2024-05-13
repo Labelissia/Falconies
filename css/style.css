@@ -384,7 +384,7 @@ a {
   border: none;
   background: none;
   display: inline-block;
-  color: rgb(24, 35, 36);
+  color: unset;
 }
 
 .claim-container {
@@ -423,23 +423,27 @@ a {
   background-color: rgb(179, 237, 245);
   border: solid 1px rgba(94, 127, 131, 0.5);
   box-shadow: 3px 3px 10px rgba(22, 55, 65, 0.5);
+  color: rgb(42, 100, 118);
 }
 .button--primary__link {
   color: rgb(24, 35, 36);
+}
+
+.button:hover {
+  background-color: rgb(42, 100, 118);
+  color: rgb(225, 247, 250);
 }
 
 .button--secondary {
   background-color: transparent;
   border: solid 1px rgb(179, 237, 245);
   box-shadow: 0px 0px 10px rgba(225, 247, 250, 0.4);
-}
-.button--secondary__link {
   color: white;
 }
 
-.button:hover {
-  background-color: rgb(42, 100, 118);
-  color: rgb(225, 247, 250);
+.button--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(39, 152, 109);
 }
 
 .button a:hover {
