@@ -1,31 +1,19 @@
 <aside class="most-read">
+
             
-            
-                <div class="most-read__list">
+    <div class="most-read__list">
                     
-                    <div class="article-thumbnail">
-                        <img class="article-teaser__img" srcset="/Images/pobrezi_zuly/main1_small.jpg 650w, /Images/pobrezi_zuly/main1_medium.jpg 950w, /Images/pobrezi_zuly/main1_big.jpg 1250w, /Images/pobrezi_zuly/main1_large.jpg 2000w, /Images/pobrezi_zuly/main1_superlarge.jpg 2500w" src="/Images/pobrezi_zuly/main1_medium.jpg" alt="Kameny na pobřeží Červené žuly">
+        {% for posts in collections.article | reverse %}       
+            <div class="article-thumbnail">
+                <img class="article-teaser__img" srcset="{{ posts.data.fotoset }}" src="{{ posts.data.foto }}" alt="{{ posts.data.alt}}">
 
-                        <a href="/francie/cotes-darmor/"><div class="article-thumbnail__text-container">
-                            <p class="article-thumbnail__text">Pobřeží růžové žuly</p>
-                        </div></a>        
-                    </div>
-                    <div class="article-thumbnail">
-                        <img class="article-teaser__img" srcset="/Images/Ribadesella/main_small.jpg 650w, /Images/Ribadesella/main_medium.jpg 950w, /Images/Ribadesella/main_big.jpg 1250w, /Images/Ribadesella/main_large.jpg 2000w, /Images/Ribadesella/main_superlarge.jpg 2500w" src="/Images/Ribadesella/main_middle.jpg" alt="Výhled na Španělské město Ribadesella">
+                <a href="{{ posts.url }}"><div class="article-thumbnail__text-container">
+                    <p class="article-thumbnail__text">{{ posts.data.title }}</p>
+                </div></a>        
+            </div>
+                                    
+        {% endfor %}       
+    
+    </div>
 
-                        <a href="/spanelsko/ribadesella/"><div class="article-thumbnail__text-container">
-                            <p class="article-thumbnail__text">Městečko Ribadesella</p>
-                        </div></a>                
-                    </div>
-                    <div class="article-thumbnail">
-                        <img src="/Images/Faro_de_caballo/main_small.jpg" alt="pohled na maj8k seshora">
-
-                         <a href="/spanelsko/faro-de-caballo/"><div class="article-thumbnail__text-container">
-                            <p class="article-thumbnail__text">Nedostupný maják</p>
-                         </div></a>                  
-                    </div>
-                
-                </div>
-           
-
-        </aside> 
+</aside> 

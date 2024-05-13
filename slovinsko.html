@@ -1,10 +1,10 @@
 ---
 layout: layouts/destinace.njk
-title: Španělsko
+title: Slovinsko
 ---
 
 <hero class="article__hero">
-    <img class="article__main-img" srcset="/Images/Ribadesella/main_small.jpg 650w, /Images/Ribadesella/main_middle.jpg 950w, /Images/Ribadesella/main_big.jpg 1250w, /Images/Ribadesella/main_large.jpg 2000w, /Images/Ribadesella/main_superlarge.jpg 2500w"  src="/Images/Ribadesella/main_middle.jpg" alt="pohled na mesto">
+    <img class="article__den3-img" srcset="/Images/exp_slovinsko/den3_small.jpg 650w, /Images/exp_slovinsko/den3_middle.jpg 950w, /Images/exp_slovinsko/den3_big.jpg 1250w, /Images/exp_slovinsko/den3_large.jpg 2000w, /Images/exp_slovinsko/den3_superlarge.jpg 2500w"  src="/Images/exp_slovinsko/den3_middle.jpg" alt="pohled na mesto">
     <div class="article__title-container claim-container">
        <h1 class="article__title"> {{title}}</h1>
     </div>
@@ -12,24 +12,24 @@ title: Španělsko
 
 <main class="destinace-main">
 
-{% for spain in collections.spanelsko | reverse %}   
+{% for slovenia in collections.slovinsko | reverse %}   
 
 
     <article class="article-teaser article-teaser--left article-teaser--list">
         <div class="article-teaser__header article-teaser--left__header">
-            <img class="article-teaser__img" srcset="{{ spain.data.fotoset }}" src="{{ spain.data.foto }}" alt="{{ spain.data.alt}}">
+            <img class="article-teaser__img" srcset="{{ slovenia.data.fotoset }}" src="{{ slovenia.data.foto }}" alt="{{ slovenia.data.alt}}">
             <div class="article-teaser__title-container claim-container">
-                <h1 class="article-teaser__title article-teaser--left__title">{{ spain.data.title }}</h1>
+                <h1 class="article-teaser__title article-teaser--left__title">{{ slovenia.data.title }}</h1>
             </div>
         </div>
 
         <div class="article-teaser__content article-teaser--left__content">
-            <h3 class="article-teaser__caption">{{ spain.data.caption }}</h3>
-            <p class="article-teaser__date "> {{ spain.date.toLocaleString(cs-CZ) }}</p>
-            <p class="article-teaser__text">{{ spain.data.perex }}</p>
+            <h3 class="article-teaser__caption">{{ slovenia.data.caption }}</h3>
+            <p class="article-teaser__date "> {{ slovenia.date.toLocaleString(cs-CZ) }}</p>
+            <p class="article-teaser__text">{{ slovenia.data.perex }}</p>
         </div>
         <div class="article-teaser__button-container article-teaser--left__button--container">
-            <button class="button button--primary"><a href="{{ spain.url }}">Tenhle článek mne zajímá</a></button>
+            <button class="button button--primary"><a href="{{ slovenia.url }}">Tenhle článek mne zajímá</a></button>
         </div>
         <div class="article-teaser__categories">
             <a class="article-teaser__link" href="#">Španělsko</a> 

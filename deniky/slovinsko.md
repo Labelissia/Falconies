@@ -3,13 +3,14 @@ layout: layouts/expeditions.njk
 title: Expedice Slovinsko
 caption: Z Kostomlátek do Benátek, tam a zase zpátky
 perex: V roce 2017 jsme strávili nádherných 10 dní cestováním po Slovinsku a kousku Itálie. Byl to poměrně dobrodružný výlet, neb to byla první takto velká cesta s naším retro obytňáčkem, Ávinkou a také delší dovolená společně s dětmi. Užili jsme si moře, jezera, města i rakouskou “Hochalpenstrasse” a tak se dá říci, že tato cesta prověřila jak spolehlivost naší Ávinky a automechanické schopnosti hlavního technika této výpravy, tak psychickou odolnost všech členů. 
-foto: /Images/exp_slovinsko/main_small.jpg 600w, /Images/exp_slovinsko/main_big.jpg 900w, /Images/exp_slovinsko/main_large.jpg 1500w, /Images/exp_slovinsko/main.jpg 1920w" src="/Images/exp_slovinsko/main_big.jpg"
-alt: 
+fotoset: /Images/exp_slovinsko/main_small.jpg 600w, /Images/exp_slovinsko/main_big.jpg 900w, /Images/exp_slovinsko/main_large.jpg 1500w, /Images/exp_slovinsko/main.jpg 1920w
+foto: /Images/exp_slovinsko/main_big.jpg
+alt: neco
 najete: 26766
 zeme: 6
 hodin: 49
 opravy: 4 
-tags: expedice
+tags: ['expedice', 'slovinsko']
 ---
 
 <div class="expeditions-article__content">

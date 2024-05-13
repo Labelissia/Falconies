@@ -25,6 +25,8 @@
     &__perex {
         padding: 20px;
         font-weight: bold;
+        max-width: 1200px;
+        margin: 0 auto;
        
     }
 
@@ -78,6 +80,11 @@
         clear:right; 
 
         
+    }
+
+    &__perex {
+        margin: 20px auto 20px auto;
+        max-width: 1200px;
     }
 }
 

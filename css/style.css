@@ -899,6 +899,8 @@ a {
 .expeditions-article__perex {
   padding: 20px;
   font-weight: bold;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .expeditions-article__members-title {
   text-align: center;
@@ -941,6 +943,10 @@ a {
   float: left;
   margin: 0 30px 20px 0;
   clear: right;
+}
+.expedition__perex {
+  margin: 20px auto 20px auto;
+  max-width: 1200px;
 }
 
 .expedition p:has(+ img) {
