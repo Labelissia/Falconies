@@ -3,5 +3,122 @@
 .contact-main {
     width: 100%;
     height:100vh;
-    
+    position: relative;
 } 
+
+.contact {
+    width: 100%;
+    height:calc(100vh - 60px);
+    position: absolute;
+    top:60px;      
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background  : rgba(0,0,0, 0.1);
+        padding-top: 50px;
+        gap:40px;
+        text-align: center;
+
+        @media only screen and (min-width:900px){
+            width: 60%;
+            background:linear-gradient(to right, rgba(0,0,0, 0.1) 95%, rgba(0,0,0, 0));
+            align-items: center;
+         }
+    }
+
+    &__foto-container {
+        height: 100px;
+        width:100px;
+        padding: 10px;
+        border-radius: 50%;
+        border:solid 2px variables.$c-white;
+        box-shadow: 0px 0px 10px variables.$c-list-border;
+
+        @media only screen and (min-width:600px){
+        height: 150px;
+        width:  150px;
+        }
+    }
+
+    &__our-foto {
+      border-radius: 50%;
+      border:solid 1px variables.$c-hover-font;
+      box-shadow: 0px 0px 10px variables.$c-list-border;
+    }
+
+    &__message {
+        color:variables.$c-white;
+        font-size:1.5rem;
+        font-weight: 500px;
+        padding: 0 20px;
+    }
+
+    &__email {
+        color:variables.$c-primary;
+        font-size: 1.7rem;
+        line-height: 50px;
+        height: 50px;
+        border: solid 2px variables.$c-white;
+        border-radius: 15px;
+        padding: 0 20px;
+        box-shadow: 0px 0px 10px variables.$c-list-border;
+        margin-bottom: 40px;
+    }
+}
+
+.contact-form { 
+    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap:40px;
+    margin-bottom: 140px;
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        line-height: 50px;
+        font-size: 1.5rem;
+        color: variables.$c-white;
+
+        @media only screen and (min-width:1200px){
+            flex-direction: row;
+            justify-content: space-between;
+         }
+        
+        
+    }
+
+    &__input {
+        background-color: transparent;
+        border-style: unset;
+        border: solid 2px variables.$c-white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px variables.$c-list-border;
+        width: 70%;
+        height: 50px;
+        text-align: center;   
+        font-size: 1rem;  
+        font-style: italic;   
+        color: variables.$c-primary;     
+       
+    }
+
+    
+
+    &__textarea {
+        width: 100%;
+        height: 200px;
+        border-radius: 30px;
+    }
+}

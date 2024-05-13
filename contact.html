@@ -6,17 +6,38 @@ title: Napište nám
 {% include 'partials/header.njk' %}
 
 <main class="contact-main">
+    <img srcset="/Images/pozadi_contact_small.jpg 650w, /Images/pozadi_contact_middle.jpg 950w, /Images/pozadi_contact_big.jpg 1250w, /Images/pozadi_contact_large.jpg 2000w, /Images/pozadi_contact_superlarge.jpg 2500w, /Images/pozadi_contact_supersuperlarge.jpg 3000w" src="/Images/pozadi_contact_big.jpg" alt="Otec s dcerou a psem uprostřed písečné pláže">
+    
+    
+        <div class="contact">
+            <div class="contact__content">
+                <div class="contact__foto-container">
+                    <img class="contact__our-foto" srcset="/Images/portraits/contact_supersmall.jpg 200w, /Images/portraits/contact_small.jpg 400w, /Images/portraits/contact_middle.jpg 600w, /Images/portraits/contact_big.jpg 800w" src="/Images/portraits/contact_big.jpg" alt="Fotografie rodinky">
+                </div>
+                <h2 class="contact__message"> Chcete li se s námi spojit napište nám na náš email </h2>
+                <a class="contact__email" href="">falconies@gmail.com</a>
 
-    <img srcset="/Images/pozadi_contact_small.jpg 650w, /Images/pozadi_contact_middle.jpg 950w, /Images/pozadi_contact_big.jpg 1250w, /Images/pozadi_contact_large.jpg 2000w, /Images/pozadi_contact_superlarge.jpg 2500w, /Images/pozadi_contact_supersuperlarge.jpg 3000w" src="/Images/pozadi_contact_big.jpg"
-     alt="Otec s dcerou a psem uprostřed písečné pláže">
+                <h2 class="contact__message"> Nebo nám nechte zprávu přímo tady</h2>
 
-    <form class="contact-form" action="" method="post">
+                <form class="contact-form" action="" method="post">
 
-        
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="name">Vaše jméno :</label>
+                        <input class="contact-form__input" type="text" name="name" id="name" placeholder="Zde napište Vaše jméno" required>
+                    </div>
+                    <div class="contact-form__field">
+                        <label class="contact-form__label" for="email">Váš email :</label>
+                        <input class="contact-form__input" type="email" name="email" id="email" placeholder="Zde napište Váš email" required>
+                    </div>
+                    <div class="contact-form__field">
+                        <input class="contact-form__input contact-form__textarea" type="textarea" name="textarea" is="textarea" placeholder="Zde napište Vaši zprávu">
+                    </div>
 
 
-    </form>
-
+                </form>
+            </div>
+        </div>
+    
 </main>
 
 {% include 'partials/footer.njk' %}
