@@ -110,15 +110,30 @@
         text-align: center;   
         font-size: 1rem;  
         font-style: italic;   
-        color: variables.$c-primary;     
+        color: variables.$c-white;     
        
     }
-
-    
 
     &__textarea {
         width: 100%;
         height: 200px;
         border-radius: 30px;
+    }
+
+    &__button {
+        background: transparent;
+        border: solid 2px variables.$c-white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px variables.$c-list-border;
+        color: variables.$c-white;
+    }
+
+    &__button:hover {  
+        background-color: variables.$c-white-opacity;
+        color: variables.$c-primary-dark;
+    }
+    &__button:active {  
+        background-color: variables.$c-grey-opacity;
+        color: variables.$c-primary-dark;
     }
 }
