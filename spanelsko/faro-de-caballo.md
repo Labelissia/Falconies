@@ -3,9 +3,10 @@ layout: layouts/article.njk
 title: Nedostupný maják
 caption: Sice trochu hůře dostupné, ale naprosto úchvatné místo pro výlet po souši nebo po moři.
 perex: Faro de Caballo, aneb Koňský maják, se nachází na úpatí hory Buciero  a svou polohou nabízí jeho návštěva jedinečný zážitek s dechberoucími výhledy na moře a útesy. Nenechte se jeho lehkou nedostupností odradit, atmosféra tohoto místa Vám vynaložené úsilí plně vynahradí.
-foto: /Images/Faro_de_caballo/main_small.jpg 650w, /Images/Faro_de_caballo/main_middle.jpg 950w, /ImagesFaro_de_caballo/main_big.jpg 1250w, /Images/Faro_de_caballo/main_large.jpg 2000w, /Images/Faro_de_caballo/main_superlarge.jpg 2500w" src="/Images/Faro_de_caballo/main_middle.jpg
+fotoset: /Images/Faro_de_caballo/main_small.jpg 650w, /Images/Faro_de_caballo/main_middle.jpg 950w, /Images/Faro_de_caballo/main_big.jpg 1250w, /Images/Faro_de_caballo/main_large.jpg 2000w, /Images/Faro_de_caballo/main_superlarge.jpg 2500w 
+foto: /Images/Faro_de_caballo/main_middle.jpg
 alt: Pohled na maják Faro de Caballo z výšky
-tags: spanelsko
+tags: ['spanelsko', 'article']
 ---
 
 Faro de Caballo, aneb Koňský maják, se nachází na úpatí hory Buciero  a svou polohou nabízí jeho návštěva jedinečný zážitek s dechberoucími výhledy na moře a útesy. Nenechte se jeho lehkou nedostupností odradit, atmosféra tohoto místa Vám vynaložené úsilí plně vynahradí.

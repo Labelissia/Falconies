@@ -3,9 +3,10 @@ layout: layouts/article.njk
 title: Akvárium San Sebastian
 caption: Akvárium a oceánografické muzeum San Sebastian nabízí skvělý zážitek pro děti i dospělé.
 perex: Jedním z mnoha lákadel baskické metropole San Sebastian je jednoznačně místní akvárium známé jako "Donostia-San Sebastian Aquarium”. Nachází se v blízkosti přístavu a historické čtvrti Parte Vieja a pro nás to byl jedoznačně nejlepší zážitek v tomto městě. 
-foto: sebastian_akvarium/main_middle.jpg
+fotoset: /Images/sebastian_akvarium/main_small.jpg 650w, /Images/sebastian_akvarium/main_middle.jpg 950w, /Images/sebastian_akvarium/main_big.jpg 1250w, /Images/sebastian_akvarium/main_large.jpg 2000w, /Images/sebastian_akvarium/main_superlarge.jpg 2800w 
+foto: /Images/sebastian_akvarium/main_middle.jpg
 alt: Vnitrek akvaria
-tags: spanelsko
+tags: ['spanelsko', 'article']
 ---
 
 V několika patrech nabízí detailní pohled do mořského života i do historie námořního obchodu a rybolovu. Ve více než 30 akváriích rozložených ve dvou patrech můžete obdivovat jednak Kantabrijsko-Atlantický mořský život tak i tropické podmořské živočichy. 

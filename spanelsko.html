@@ -1,22 +1,44 @@
-<!--
 ---
-layout:layouts/destinace.njk
-title: Spanelsko
+layout: layouts/destinace.njk
+title: Španělsko
 ---
 
-<h1>Španělsko</h1>
+<hero class="article__hero">
+    <img class="article__main-img" srcset="/Images/Ribadesella/main_small.jpg 650w, /Images/Ribadesella/main_middle.jpg 950w, /Images/Ribadesella/main_big.jpg 1250w, /Images/Ribadesella/main_large.jpg 2000w, /Images/Ribadesella/main_superlarge.jpg 2500w"  src="/Images/Ribadesella/main_middle.jpg" alt="pohled na mesto">
+    <div class="article__title-container claim-container">
+       <h1 class="article__title"> {{title}}</h1>
+    </div>
+</hero>
 
-<h2>
-    Seznam článků
-</h2>
+<main class="destinace-main">
 
-    {% for prispevky in collections.spanelsko | reverse %}   
+{% for prispevky in collections.spanelsko | reverse %}   
 
-        <h2> {{prispevky.data.title}}</h2>
-        <p>{{prispevky.date.toLocaleString(cs-CZ)}}</p>
-        <p>{{prispevky.data.perex}}</p>
-        <p><a href="{{ prispevek.url }}"> Přečíst celý článek </a></p>
-        <img src="/images/{{prispevek.data.foto}}">
 
-    {% endfor %}/*
-    -->
+    <article class="article-teaser article-teaser--left article-teaser--list">
+        <div class="article-teaser__header article-teaser--left__header">
+            <img class="article-teaser__img" srcset="{{ prispevky.data.fotoset }}" src="{{ prispevky.data.foto }}" alt="{{ prispevky.data.alt}}">
+            <div class="article-teaser__title-container claim-container">
+                <h1 class="article-teaser__title article-teaser--left__title">{{ prispevky.data.title }}</h1>
+            </div>
+        </div>
+
+        <div class="article-teaser__content article-teaser--left__content">
+            <h3 class="article-teaser__caption">{{ prispevky.data.caption }}</h3>
+            <p class="article-teaser__date "> {{ prispevky.date.toLocaleString(cs-CZ) }}</p>
+            <p class="article-teaser__text">{{ prispevky.data.perex }}</p>
+        </div>
+        <div class="article-teaser__button-container article-teaser--left__button--container">
+            <button class="button button--primary"><a href="{{ prispevky.url }}">Tenhle článek mne zajímá</a></button>
+        </div>
+        <div class="article-teaser__categories">
+            <a class="article-teaser__link" href="#">Španělsko</a> 
+            <a class="article-teaser__link" href="#">Příroda</a>
+            <a class="article-teaser__link" href="#">Moře</a>
+            <a class="article-teaser__link" href="#">Cestování</a>
+        </div>
+    </article>
+    
+    {% endfor %}
+    
+</main>

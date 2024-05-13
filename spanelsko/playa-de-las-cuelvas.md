@@ -3,9 +3,10 @@ layout: layouts/article.njk
 title: Playa de las Cuelvas
 caption: Nádherná pláž s mnoha jeskyněmi a skalními útvary a dobrým občerstvením :)
 perex: Severní pobřeží je obklopeno mnoha krásnými plážemi, ovšem tato patří mezi perlu mezi nimi. Playa de Las Cuelvas leží kousek od města Lannes a přestože měří pouze 125 metrů, svým vzhledem Vás naprosto okouzlí. 
-foto: /Images/las_cuelvas/main_small.jpg 650w, /Images/las_cuelvas/main_middle.jpg 950w, /Images/las_cuelvas/main_big.jpg 1250w, /Images/las_cuelvas/main_large.jpg 2000w, /Images/las_cuelvas/main_superlarge.jpg 2500w" src="/Images/las_cuelvas/main_middle.jpg
+fotoset: /Images/las_cuelvas/main_small.jpg 650w, /Images/las_cuelvas/main_middle.jpg 950w, /Images/las_cuelvas/main_big.jpg 1250w, /Images/las_cuelvas/main_large.jpg 2000w, /Images/las_cuelvas/main_superlarge.jpg 2500w
+foto: /Images/las_cuelvas/main_middle.jpg
 alt: Pláž ohraničená skálami
-tags: spanelsko
+tags: ['spanelsko', 'article']
 ---
 
 Její jméno pochází od skalních útvarů, které svou silou zformovalo moře a kromě výrazných a velmi fotogenických skalních oblouků zde naleznete i spoustu jeskyní. V době nejvyššího odlivu pod oblouky projdete suchou nohou, zatímco když vrcholí příliv, zůstává pod oblouky něco málo přes metr. 
