@@ -280,7 +280,14 @@
   height: 20%;
 }
 .menu--side__sublink {
-  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+.menu--side__subitem {
+  width: 100%;
+}
+.menu--side__sublist {
+  width: 100%;
+  z-index: 100;
 }
 
 /*
