@@ -5,25 +5,15 @@ layout: layouts/main.njk
 
 {% include 'partials/header.njk' %}
 
-    <main class="article-main">
+    
+{% include 'partials/article-hero.njk' %}
 
+    <main class="article-main">  
         <article class="article">
-            <hero class="article__hero">
-                <img class="article__main-img" srcset="{{ fotoset }}" src="{{ foto }}" alt="{{ alt }}">
-                <div class="article__title-container claim-container">
-                   <h1 class="article__title"> {{title}}</h1>
-                </div>
-            </hero>
-
-            <section class="article__content">
-                <p class="article__date">Publikováno {{page.date.toLocaleString('cs-CZ')}} </p>
-                <h3 class="article__caption"> {{caption}} </h3>
-                <p class="article__perex"> {{perex}} </p>
+         {% include 'partials/article-info.njk' %} 
 
                 {{content | safe }}
-            </section>
-
-
+            
         </article>
     </main>
 

@@ -86,6 +86,11 @@ a {
     align-items: center;
     line-height: 50px;
     cursor: pointer;
+    transition: transform 0.05s;
+}
+
+.button:hover {  
+    transform: scale(1.1);
 }
 
 .button--primary {
@@ -94,34 +99,48 @@ a {
     border: solid 1px variables.$c-list-border;
     box-shadow: 3px 3px 10px variables.$c-secondary-dark-opacity;
     color: variables.$c-secondary;
+    transition: transform 0.05s,
+                box-shadow 0.05s;
 
     &__link {
         color: variables.$c-primary-dark;
     }
 }
 
-
-
-.button:hover {  
-    background-color: variables.$c-secondary;
-    color: variables.$c-hover-font;
+.button--primary:hover {
+    box-shadow: 4px 4px 12px variables.$c-secondary-dark-opacity;
+    
 }
+.button--primary:active {
+    box-shadow: 3px 3px 10px variables.$c-secondary-dark-opacity;
+    transform: translate(2px, 2px);
+    background-color: variables.$c-primary-hover;
+}
+
 
 .button--secondary {
     background-color: transparent;
     border: solid 1px variables.$c-primary; 
-    box-shadow: 0px 0px 10px variables.$c-hover-font-opacity;   
+    box-shadow: 3px 3px 10px variables.$c-hover-font-opacity;   
     color: variables.$c-white;
+    transition: transform 0.05s,
+                box-shadow 0.05s;
     
 }
 .button--secondary:hover {
-    background-color: variables.$c-white-opacity;
-        color: variables.$c-go;
+    background-color: transparent;
+    box-shadow: 4px 4px 12px variables.$c-hover-font-opacity; 
 }
+.button--secondary:active {
+    transform: translate(2px, 2px);
+    background-color:variables.$c-white-bigopacity ;
+    box-shadow: 3px 3px 10px variables.$c-hover-font-opacity; 
+   
+} 
 
 
-.button a:hover {
+/*.button a:hover {
    
     color: variables.$c-hover-font;
-}
+}*/
 

@@ -416,6 +416,11 @@ a {
   align-items: center;
   line-height: 50px;
   cursor: pointer;
+  transition: transform 0.05s;
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 
 .button--primary {
@@ -424,32 +429,45 @@ a {
   border: solid 1px rgba(94, 127, 131, 0.5);
   box-shadow: 3px 3px 10px rgba(22, 55, 65, 0.5);
   color: rgb(42, 100, 118);
+  transition: transform 0.05s, box-shadow 0.05s;
 }
 .button--primary__link {
   color: rgb(24, 35, 36);
 }
 
-.button:hover {
-  background-color: rgb(42, 100, 118);
-  color: rgb(225, 247, 250);
+.button--primary:hover {
+  box-shadow: 4px 4px 12px rgba(22, 55, 65, 0.5);
+}
+
+.button--primary:active {
+  box-shadow: 3px 3px 10px rgba(22, 55, 65, 0.5);
+  transform: translate(2px, 2px);
+  background-color: rgb(165, 220, 227);
 }
 
 .button--secondary {
   background-color: transparent;
   border: solid 1px rgb(179, 237, 245);
-  box-shadow: 0px 0px 10px rgba(225, 247, 250, 0.4);
+  box-shadow: 3px 3px 10px rgba(225, 247, 250, 0.4);
   color: white;
+  transition: transform 0.05s, box-shadow 0.05s;
 }
 
 .button--secondary:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: rgb(39, 152, 109);
+  background-color: transparent;
+  box-shadow: 4px 4px 12px rgba(225, 247, 250, 0.4);
 }
 
-.button a:hover {
-  color: rgb(225, 247, 250);
+.button--secondary:active {
+  transform: translate(2px, 2px);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 3px 3px 10px rgba(225, 247, 250, 0.4);
 }
 
+/*.button a:hover {
+
+    color: variables.$c-hover-font;
+}*/
 .hero {
   width: 100%;
   height: 100vh;
@@ -597,6 +615,10 @@ a {
     font-size: 1.4rem;
   }
 }
+.country__link:hover {
+  background-color: rgb(43, 69, 78);
+  color: rgb(83, 230, 250);
+}
 .country__item {
   display: flex;
   justify-content: center;
@@ -607,12 +629,21 @@ a {
   border: solid 1px rgb(22, 55, 65);
   flex: 0 0 150px;
   box-shadow: 3px 3px 3px rgba(94, 127, 131, 0.5);
+  transition: transform 0.05s, box-shadow 0.05s;
 }
 @media only screen and (min-width: 1001px) {
   .country__item {
     height: 100%;
     flex: 0 0 120px;
   }
+}
+.country__item:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 4px rgba(94, 127, 131, 0.5);
+}
+.country__item:active {
+  box-shadow: 2px 2px 3px rgba(94, 127, 131, 0.5);
+  transform: translate(2px, 2px);
 }
 .country__img-container {
   width: 100%;
@@ -845,9 +876,13 @@ a {
 
 .article {
   width: 100%;
-  margin: 60px 0 0;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 .article__hero {
+  margin-top: 60px;
   width: 100%;
   height: 40vh;
   display: inline-block;
@@ -869,33 +904,15 @@ a {
   color: rgba(22, 55, 65, 0.5);
   font-size: 0.9rem;
   text-align: right;
-  margin: 10px 0;
+  margin: 0;
 }
 .article__perex {
   font-weight: bold;
-}
-.article__content {
-  max-width: 1200px;
-  margin: 0 auto 20px auto;
-  padding: 0 20px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 .article p {
   margin: 20px 0;
 }
 
-.expeditions-article__content {
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-}
-@media only screen and (min-width: 1200px) {
-  .expeditions-article__content {
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto 20px auto;
-  }
-}
 .expeditions-article__route {
   text-align: center;
   font-size: 0.8rem;

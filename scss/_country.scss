@@ -70,6 +70,13 @@
 
     }
 
+    &__link:hover {
+        background-color: variables.$c-hover-country;
+        color: variables.$c-hover-font-country;
+        
+
+    }
+
     &__item {
         display: flex;
         justify-content: center;
@@ -80,12 +87,27 @@
         border: solid 1px variables.$c-secondary-dark;
         flex: 0 0 150px;
         box-shadow: 3px 3px 3px variables.$c-list-border;
+        transition: transform 0.05s,
+                    box-shadow 0.05s;
+
         
         @media only screen and (min-width: 1001px){
             height: 100%;
             flex: 0 0 120px;
         }
     }
+
+    &__item:hover {
+        transform: scale(1.1);
+        box-shadow: 4px 4px 4px variables.$c-list-border;
+
+    }
+
+    &__item:active {
+        box-shadow: 2px 2px 3px variables.$c-list-border;
+        transform: translate(2px, 2px);
+    }
+
 
     &__img-container {
         width: 100%;

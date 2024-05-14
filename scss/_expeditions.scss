@@ -2,20 +2,7 @@
 
 
 .expeditions-article{
-
-    &__content {
-        
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-
-        @media only screen and (min-width: 1200px){
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto 20px auto;
-        }
-    }
-
+    
     &__route{
         text-align: center;
         font-size: 0.8rem;

@@ -1,5 +1,5 @@
 ---
-layout: layouts/expeditions.njk
+layout: layouts/article.njk
 title: Expedice Slovinsko
 caption: Z Kostomlátek do Benátek, tam a zase zpátky
 perex: V roce 2017 jsme strávili nádherných 10 dní cestováním po Slovinsku a kousku Itálie. Byl to poměrně dobrodružný výlet, neb to byla první takto velká cesta s naším retro obytňáčkem, Ávinkou a také delší dovolená společně s dětmi. Užili jsme si moře, jezera, města i rakouskou “Hochalpenstrasse” a tak se dá říci, že tato cesta prověřila jak spolehlivost naší Ávinky a automechanické schopnosti hlavního technika této výpravy, tak psychickou odolnost všech členů. 
@@ -13,7 +13,7 @@ opravy: 4
 tags: ['expedice', 'slovinsko']
 ---
 
-<div class="expeditions-article__content">
+
 <h2 class="expeditions-article__route-title">Přesná trasa</h2>
     <p class="expeditions-article__route">Kostomlátky - Bratislava - Fertöd (Neziderské jezero) - Maribor - Bledské jezero - Bohyňské jezero - Tolmin - Piran - Grado - Benátky - Dürensee - Kostomlátky</p> 
     <h2 class="expeditions-article__members-title">Účastníci zájezdu</h2>
@@ -202,4 +202,3 @@ Modlení pomohlo a naše zlatá Rozárka ten přejezd přeci jen zvládla i bez 
 A byť jsme dojížděli v dost nervózním stavu a s nutným průběžným chlazením a neustálým doléváním vody a v podstatě na jeden zátah ( Jarda se bál, že pokud zastaví, už se mu ji nepodaří na místě rozchodit), přeci jen jsme se šťastně dokodrcali zpět domů.
    </div>
   </div>
-</div>
