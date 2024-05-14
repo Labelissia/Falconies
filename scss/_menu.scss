@@ -242,7 +242,7 @@
     flex-direction: column;
     position: absolute;
     top:60px;
-    right:0;
+    right:-60vw;
     height: calc(100vh - 60px);
     width: 60vw;
     
@@ -309,5 +309,5 @@
 
 
 #click:checked ~ .menu--side {
-    transform: translate(-50px,0);
+    transform: translate(-60vw,0);
 }
