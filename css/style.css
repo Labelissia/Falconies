@@ -70,6 +70,11 @@
   display: flex;
   align-self: center;
 }
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .menu__list {
+    display: none;
+  }
+}
 @media only screen and (max-width: 600px) {
   .menu__list {
     height: calc(100% - 60px);
@@ -118,6 +123,12 @@
       padding: 0 10px;   
       font-size: 1.1rem;     
      */
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .menu__link {
+    background-color: rgba(179, 237, 245, 0.8);
+    font-size: 2rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .menu__link {
@@ -202,9 +213,14 @@
     flex-wrap: nowrap;
     flex-direction: column;
     position: absolute;
-    top: 60%;
+    top: 100%;
     left: 0;
     z-index: 2000;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu__top-item:hover + .menu__top-item {
+    margin-top: 180px;
   }
 }
 .menu__sm-link-container {
@@ -230,14 +246,6 @@
     width: 30px;
   }
 }
-@media only screen and (max-width: 1170px) {
-  .menu {
-    gap: 10px;
-    justify-content: space-evenly;
-    padding: 0 5px;
-    flex-grow: 0;
-  }
-}
 @media only screen and (max-width: 600px) {
   .menu {
     display: flex;
@@ -250,6 +258,68 @@
     overflow-y: scroll;
     overflow-x: hidden;
   }
+}
+
+.menu--side {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  height: calc(100vh - 60px);
+  width: 60vw;
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .menu--side {
+    display: flex;
+  }
+}
+.menu--side__top-item {
+  height: calc((100vh - 60px) / 5);
+  border-top: solid 1px rgba(94, 127, 131, 0.5);
+  height: 20%;
+}
+.menu--side__sublink {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*
+.hamburger-tabletmenu {
+    display: none;
+
+
+    @media only screen and (min-width:601px) and (max-width:900px){
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@keyframes menu{
+    from {transform: translate (0, 0);}
+    to {transform: translate(-60vw, 0);}
+}
+.hamburger-tabletmenu:active .menu--side{
+    animation: menu 2s;
+    animation-fill-mode: forwards;
+}
+
+.closing-tabletmenu {
+      display: none;
+}
+*/
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .icons-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+}
+
+#click:checked ~ .menu--side {
+  transform: translate(-50px, 0);
 }
 
 .hamburger-menu {
