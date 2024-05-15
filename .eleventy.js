@@ -4,6 +4,11 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
     // Zkopírovat css/ to _site/css/
     eleventyConfig.addPassthroughCopy("css");
+    //vloží pouze tři nejnovější články
+    eleventyConfig.addFilter("limit", function (arr, limit) {
+      return arr.slice(0, limit);
+    });
+    
 
     return {
         // možné formáty šablon

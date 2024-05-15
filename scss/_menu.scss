@@ -307,7 +307,31 @@
 }
 
 
+#click {
+    display: none;
+}
+
+.hamburger {
+
+    display: none;
+
+    @media only screen and (min-width:601px) and (max-width:900px){
+        display: flex;
+    }
+}
+.closing {
+
+    display: none;
+}
 
 #click:checked ~ .menu--side {
-    transform: translate(-60vw,0);
+    transform: translate(-60vw,0);    
+}
+
+#click:checked ~ label .hamburger {
+    display: none;
+}
+
+#click:checked ~ label .closing {
+    display: flex;
 }
