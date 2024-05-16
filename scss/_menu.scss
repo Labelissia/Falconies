@@ -10,6 +10,23 @@
     height:100%;
     width: 100%;
     
+    @media only screen and (max-width: 600px) {
+    
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+        align-content: stretch;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        
+    }
+
+    @media only screen and (min-width: 901px) and (max-width: 1100px) {
+        gap:20px;
+    }
 
     &__list {
         height: 100%;
@@ -37,9 +54,9 @@
         position: relative;
         white-space: nowrap;
 
-        @media only screen and (max-width: 600px){
+        @media only screen and (max-width: 900px){
             border-top: solid 1px variables.$c-list-border;
-            height: calc(100% / variables.$menu-count);
+            height: 15%;
             display: flex;
             flex-wrap: nowrap;
             flex-direction: column;
@@ -64,7 +81,7 @@
         height: 100%;
         width: 100%;
         line-height: 60px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: variables.$c-primary-dark;
         background-color: variables.$c-primary;
         text-transform: uppercase;
@@ -72,21 +89,26 @@
         cursor: pointer;
         transition: all easy-in-out 100ms;
 
+
         @media only screen and (min-width:601px) and (max-width:900px){
-            background-color: rgb(179,237,245, 0.8);
-              
-            font-size: 2rem; 
+            background-color: rgb(179,237,245, 0.8);              
+            
         }
 
-        /*@media only screen and (max-width: 1170px) {
-            padding: 0 10px;   
-            font-size: 1.1rem;     
-           */
+        @media only screen and (min-width: 901px) and (max-width: 1100px) {
+            padding: 0 15px;  
+        }
+        
 
         @media only screen and (max-width: 600px){
             padding: 0;
-            font-size: 2rem;
+            font-size: 1.9rem;
+           
         }
+    }
+
+    &__link--nohand {
+        cursor: unset;
     }
 
     
@@ -189,6 +211,23 @@
         }
     }
 
+    &__top-item:hover + &__top-item--fotogalery {
+
+        @media only screen and (max-width: 900px){
+            margin-top: 60px;
+
+        }
+    }
+    &__top-item:hover + &__top-item--onas, &__top-item:hover + &__top-item--destinace {
+
+        @media only screen and (max-width: 900px){
+            margin-top: 0px;
+
+        }
+    }
+
+    
+
     /*DROPDOWN STYLING end*/
 
      &__sm-link-container {
@@ -220,19 +259,6 @@
        
     
     
-    @media only screen and (max-width: 600px) {
-
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        justify-content: space-between;
-        gap: 0;
-        align-content: stretch;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        
-    }
 
 
 }
@@ -246,6 +272,7 @@
     height: calc(100vh - 60px);
     width: 60vw;
     transition: transform 1s;
+    background-color: rgba(179, 237, 245, 1);
     
     @media only screen and (min-width:601px) and (max-width:900px){
         display: flex;
@@ -253,7 +280,7 @@
     }
 
     &__top-item {
-        height: calc((100vh - 60px) / 5);
+        height: 15%;
         border-top: solid 1px variables.$c-list-border;
         
     }
@@ -267,7 +294,13 @@
     }
     &__sublist {
         width: 100%;
-        z-index: 100
+        height: 60px;
+        z-index: 100;
+        top: 100%;
+    }
+
+    &__top-item:hover + &__top-item--fotogalery{
+        margin-top: 60px;
     }
 }
 
@@ -298,7 +331,12 @@
 .closing {
 
     display: none;
-}
+
+    @media only screen and (min-width:901px) {
+        display: none;
+    }
+
+    }
 
 #click:checked ~ .menu--side {
     transform: translate(-60vw,0);    

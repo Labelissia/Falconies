@@ -1,0 +1,15 @@
+@use 'variables';
+
+.fotogalerie{
+
+    &__info{
+    text-align: center;
+    margin: 100px auto;
+    
+}
+}
+
+.foto-main {
+    height: calc(100vh - 60px);
+    
+}

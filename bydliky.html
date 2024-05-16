@@ -6,7 +6,7 @@ title: Naše vozítka
 <hero class="article__hero">
     <img class="article__main1-img" srcset="/Images/krystof/krystof_first_small.jpg 650w, /Images/krystof/krystof_first_middle.jpg 900w, /Images/krystof/krystof_first_big.jpg 1500w"  src="/Images/krystof/krystof_first_big.jpg" alt="Bílá dodávka">
     <div class="article__title-container claim-container">
-       <h1 class="article__title"> {{title}}</h1>
+       <h1 class="article__title "> {{title}}</h1>
     </div>
 </hero>
 
@@ -15,7 +15,7 @@ title: Naše vozítka
 {% for vozitka in collections.bydlik | reverse %}   
 
 
-    <article class="article-teaser article-teaser--left article-teaser--list">
+    <article class="article-teaser article-teaser--left article-teaser--list ">
         <div class="article-teaser__header article-teaser--left__header">
             <img class="article-teaser__img" srcset="{{ vozitka.data.fotoset }}" src="{{ vozitka.data.foto }}" alt="{{ vozitka.data.alt}}">
             <div class="article-teaser__title-container claim-container">
@@ -23,13 +23,13 @@ title: Naše vozítka
             </div>
         </div>
 
-        <div class="article-teaser__content article-teaser--left__content">
+        <div class="article-teaser__content article-teaser--left__content article-teaser--destinace__content">
             <h3 class="article-teaser__caption">{{ vozitka.data.caption }}</h3>
             <p class="article-teaser__date "> {{ vozitka.date.toLocaleString(cs-CZ) }}</p>
             <p class="article-teaser__text">{{ vozitka.data.perex }}</p>
-        </div>
-        <div class="article-teaser__button-container article-teaser--left__button--container">
-            <button class="button button--primary"><a href="{{ vozitka.url }}">Tenhle článek mne zajímá</a></button>
+            <div class="article-teaser__button-container article-teaser--left__button--container">
+                <button class="button button--primary"><a href="{{ vozitka.url }}">Tenhle článek mne zajímá</a></button>
+            </div>
         </div>
         <div class="article-teaser__categories">
             <a class="article-teaser__link" href="#">Španělsko</a> 

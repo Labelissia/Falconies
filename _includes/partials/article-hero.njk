@@ -1,6 +1,6 @@
 <hero class="article__hero">
    <img class="article__main-img" srcset="{{ fotoset }}" src="{{ foto }}" alt="{{ alt }}">
    <div class="article__title-container claim-container">
-      <h1 class="article__title"> {{title | upper}}</h1>
+      <h1 class="article__title {{ 'article__title--smaller' if page.fileSlug === 'rozarka' }}"> {{title | upper}}</h1>
    </div>
 </hero>

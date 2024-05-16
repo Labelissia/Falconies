@@ -27,11 +27,11 @@ title: Francie
             <h3 class="article-teaser__caption">{{ france.data.caption }}</h3>
             <p class="article-teaser__date "> {{ france.date.toLocaleString(cs-CZ) }}</p>
             <p class="article-teaser__text">{{ france.data.perex }}</p>
+            <div class="article-teaser__button-container article-teaser--left__button--container">
+                <button class="button button--primary"><a href="{{ france.url }}">Tenhle článek mne zajímá</a></button>
+            </div>
         </div>
-        <div class="article-teaser__button-container article-teaser--left__button--container">
-            <button class="button button--primary"><a href="{{ france.url }}">Tenhle článek mne zajímá</a></button>
-        </div>
-        <div class="article-teaser__categories">
+            <div class="article-teaser__categories">
             <a class="article-teaser__link" href="#">Španělsko</a> 
             <a class="article-teaser__link" href="#">Příroda</a>
             <a class="article-teaser__link" href="#">Moře</a>

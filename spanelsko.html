@@ -16,20 +16,21 @@ title: Španělsko
 
 
     <article class="article-teaser article-teaser--list">
-        <div class="article-teaser__header article-teaser--left__header">
+        <div class="article-teaser__header article-teaser--left__header article-teaser--destinace__header">
             <img class="article-teaser__img" srcset="{{ spain.data.fotoset }}" src="{{ spain.data.foto }}" alt="{{ spain.data.alt}}">
             <div class="article-teaser__title-container claim-container">
                 <h1 class="article-teaser__title article-teaser--left__title">{{ spain.data.title }}</h1>
             </div>
         </div>
 
-        <div class="article-teaser__content article-teaser--left__content">
+        <div class="article-teaser__content article-teaser--left__content article-teaser--destinace__content">
             <h3 class="article-teaser__caption">{{ spain.data.caption }}</h3>
             <p class="article-teaser__date "> {{ spain.date.toLocaleString(cs-CZ) }}</p>
             <p class="article-teaser__text">{{ spain.data.perex }}</p>
-        </div>
-        <div class="article-teaser__button-container article-teaser--left__button--container">
-            <button class="button button--primary"><a href="{{ spain.url }}">Tenhle článek mne zajímá</a></button>
+        
+            <div class="article-teaser__button-container article-teaser--left__button--container">
+                <button class="button button--primary"><a href="{{ spain.url }}">Tenhle článek mne zajímá</a></button>
+            </div>
         </div>
         <div class="article-teaser__categories">
             <a class="article-teaser__link" href="#">Španělsko</a> 
