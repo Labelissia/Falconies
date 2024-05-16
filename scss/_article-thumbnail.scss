@@ -31,13 +31,16 @@
     
     &__text {
         
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         border: 1px solid white;
         border-radius: 5px;
         text-align: center;
         padding: 5px;
         width: 90%;
         
+        @media only screen and (min-width:400px){
+            font-size: 1.8rem;
+        }
     }
 
     &__text-container:hover &__text {

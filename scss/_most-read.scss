@@ -10,6 +10,7 @@
     margin: 0 30px 50px 30px;
     overflow: hidden;
     border: solid 1px variables.$c-primary;
+    background-color: rgba(225, 247, 250 );
     
     
     
@@ -20,28 +21,36 @@
         grid-column: 2 / 3;        
         margin: 0;
         height: 100%;
-        background-color: rgba(225, 247, 250 );
         
     } 
 
     &__list {
-    width: 75%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px; 
-    
+
+    @media only screen and (min-width){
+        width: 75%;
+
+    }
+    }
+
+
     &__item {
         height:calc((100% - 40px) / 3)
     }
+
+
     
     @media only screen and (min-width: 1001px){
         width: 100%;
         max-width: 360px;
        }   
     
-    }
+    
 
     &__title {
         line-height: 10vh;
