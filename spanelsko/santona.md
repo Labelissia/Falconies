@@ -3,8 +3,8 @@ layout: layouts/article.njk
 title: Santoňa
 caption: Obklopena nádhernými plážemi nabízí skvělé možnosti pro výlety i sportovní vyžití.
 perex: Město Santoňa  naleznete na severním pobřeží Španělska v oblasti Kantábrie u stejnojmenného zálivu 45 kilometrů od města Santander. Je příjemným letoviskem, které je známé nejen svými plážemi, ale také jakožto hlavní konzervárenský přístav v Kantábrii, proslavený svými ančovičkami v oleji. Pokud zde budete určitě stojí za to, je ochutnat a případně se nechat provést celým výrobním procesem. 
-fotoset: /Images/Santona/main_small.jpg 650w, /Images/Santona/main_middle.jpg 950w, /Images/Santona/main_big.jpg 1250w, /Images/Santona/main_large.jpg 2000w, /Images/Santona/main_superlarge.jpg 2800w 
-foto: /Images/Santona/main_middle.jpg
+fotoset: /images/Santona/main_small.jpg 650w, /images/Santona/main_middle.jpg 950w, /images/Santona/main_big.jpg 1250w, /images/Santona/main_large.jpg 2000w, /images/Santona/main_superlarge.jpg 2800w 
+foto: /images/Santona/main_middle.jpg
 alt: Výhled na Santoňu a pláž Berria
 tags: ['spanelsko', 'article']
 ---

@@ -3,8 +3,8 @@ layout: layouts/article.njk
 title: San Sebastian
 caption: Metropole, kde se snoubí historie a moderní městský život spolu s přírodou a oceánem.
 perex: Pokud jste milovníky měst s bohatou historií a zároveň si libujete v dobrém jídle, je San Sebastián pro Vás naprosto ideální destinací. Nabízí bohatou nabídku kulturního vyžití (za nás musíme vypíchnout místní mořské akvárium), množství obchůdků a restaurací, ale také krásné výhledy a několik pláží ve svém okolí. 
-fotoset: /Images/San_sebastian/main_small.jpg 650w, /Images/San_sebastian/main_middle.jpg 950w, /Images/San_sebastian/main_big.jpg 1250w, /Images/San_sebastian/main_large.jpg 2000w, /Images/San_sebastian/main_superlarge.jpg 2500w
-foto: /Images/San_sebastian/main_middle.jpg
+fotoset: /images/San_sebastian/main_small.jpg 650w, /images/San_sebastian/main_middle.jpg 950w, /images/San_sebastian/main_big.jpg 1250w, /images/San_sebastian/main_large.jpg 2000w, /images/San_sebastian/main_superlarge.jpg 2500w
+foto: /images/San_sebastian/main_middle.jpg
 alt: Výhled na San Sebastian
 tags: ['spanelsko', 'article']
 ---

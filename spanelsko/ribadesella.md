@@ -3,8 +3,8 @@ layout: layouts/article.njk
 title: Ribadesella
 caption: Letovisko s dlouhou pláží na pozadí hor a skvělé místo pro relaxaci.
 perex: Málokteré jiné místo ve Španělsku může nabídnout tak jedinečnou scenerii jako městečko Ribadesella nacházející se v Asturii u ústí řeky Sella. Na pozadí se tyčí vrcholky pohoří Picos de Europa, jehož svahy se postupně svažují k řece Selle, která dělí městečko na dvě velmi odlišné části a jejíž ústí je lemováno plážemi s bílým pískem.
-fotoset: /Images/Ribadesella/main_small.jpg 650w, /Images/Ribadesella/main_middle.jpg 950w, /Images/Ribadesella/main_big.jpg 1250w, /Images/Ribadesella/main_large.jpg 2000w, /Images/Ribadesella/main_superlarge.jpg 2500w 
-foto: /Images/Ribadesella/main_middle.jpg
+fotoset: /images/Ribadesella/main_small.jpg 650w, /images/Ribadesella/main_middle.jpg 950w, /images/Ribadesella/main_big.jpg 1250w, /images/Ribadesella/main_large.jpg 2000w, /images/Ribadesella/main_superlarge.jpg 2500w 
+foto: /images/Ribadesella/main_middle.jpg
 alt: Výhled na Španělské město Ribadesella
 tags: ['spanelsko', 'article']
 ---

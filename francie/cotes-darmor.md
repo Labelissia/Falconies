@@ -3,8 +3,8 @@ layout: layouts/article.njk
 title: Pobřeží růžové žuly
 caption: Tisíce tvarů a barev, které probouzejí fantazii.
 perex: Pokud jste vášnivými fotografy a libujete si navíc v zajímavých přírodních tvarech, nechejte si na návštěvu této nádherné oblasti opravdu hodně, hodně času. Na tomto více než třicetikilometrovém úseku Bretaňského pobřeží nenajdete nefotogenické místo.
-fotoset: /Images/pobrezi_zuly/main1_small.jpg 650w, /Images/pobrezi_zuly/main1_medium.jpg 950w, /Images/pobrezi_zuly/main1_big.jpg 1250w, /Images/pobrezi_zuly/main1_large.jpg 2000w, /Images/pobrezi_zuly/main1_superlarge.jpg 2500w
-foto: /Images/pobrezi_zuly/main1_medium.jpg
+fotoset: /images/pobrezi_zuly/main1_small.jpg 650w, /images/pobrezi_zuly/main1_medium.jpg 950w, /images/pobrezi_zuly/main1_big.jpg 1250w, /images/pobrezi_zuly/main1_large.jpg 2000w, /images/pobrezi_zuly/main1_superlarge.jpg 2500w
+foto: /images/pobrezi_zuly/main1_medium.jpg
 alt: Hromada kamení na pozadí moře
 tags: ['francie', 'article']
 ---
