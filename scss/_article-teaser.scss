@@ -2,14 +2,14 @@
 
 
 .article-teaser {
-    display: grid;;
+    display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 300px auto auto auto;
+    grid-template-rows: 300px auto;
     gap:20px;
     justify-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     
     
     @media only screen and (min-width:1001px){
@@ -67,6 +67,10 @@
     &__content {
         text-align: center;
         padding: 20px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
 
         @media only screen and (min-width:1001px){
             display: none;
@@ -119,7 +123,7 @@
 }
 
 .article-teaser--right {
-
+        padding-bottom: 0;
     @media only screen and (min-width:1001px){
         width: 90%;
         margin: 0 auto 100px;

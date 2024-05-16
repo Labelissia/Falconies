@@ -1,10 +1,10 @@
 <aside class="most-read">
 
-            
+    <h2 class="most-read__title title">Nejnovější</h2>         
     <div class="most-read__list">
-            <h2 class="most-read__title title">Nejnovější</h2>  
+             
         {% for posts in collections.article | reverse | limit(3)%}       
-            <div class="article-thumbnail">
+            <div class="article-thumbnail most-read__item">
                 <img class="article-teaser__img article-thumbnail__img" srcset="{{ posts.data.fotoset }}" src="{{ posts.data.foto }}" alt="{{ posts.data.alt}}">
 
                 <a href="{{ posts.url }}"><div class="article-thumbnail__text-container">

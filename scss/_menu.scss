@@ -183,7 +183,7 @@
 
     &__top-item:hover + &__top-item{
 
-        @media only screen and (max-width: 600px){
+        @media only screen and (max-width: 900px){
             margin-top: 180px;
 
         }
@@ -245,6 +245,7 @@
     right:-60vw;
     height: calc(100vh - 60px);
     width: 60vw;
+    transition: transform 1s;
     
     @media only screen and (min-width:601px) and (max-width:900px){
         display: flex;
@@ -254,7 +255,7 @@
     &__top-item {
         height: calc((100vh - 60px) / 5);
         border-top: solid 1px variables.$c-list-border;
-        height: calc(100% / variables.$menu-count);
+        
     }
 
     &__sublink{
@@ -270,31 +271,6 @@
     }
 }
 
-/*
-.hamburger-tabletmenu {
-    display: none;
-    
-    
-    @media only screen and (min-width:601px) and (max-width:900px){
-        display: flex;
-        flex-direction: column;
-        
-    }
-}
-
-@keyframes menu{
-    from {transform: translate (0, 0);}
-    to {transform: translate(-60vw, 0);}
-}
-.hamburger-tabletmenu:active .menu--side{
-    animation: menu 2s;
-    animation-fill-mode: forwards;
-}
-
-.closing-tabletmenu {
-      display: none;
-}
-*/
 .icons-container {
     @media only screen and (min-width:601px) and (max-width:900px){
         display: flex;
