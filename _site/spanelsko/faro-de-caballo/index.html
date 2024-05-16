@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nedostupný maják</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playball&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+   
+<header id="header" class="header">
+        
+        <div class="header__mobile-top-container"> 
+            <a class="header__logo-container" href="/">
+                    <img class="header__logo-img" src="/images/FALCONIES (2).svg" alt="">
+            </a>
+            <div id="hamburger" class="hamburger-menu" >
+                <img   class="hamburger-menu__img" src="/images/hamburgermenu.svg" alt="Ikonka hamburger menu">
+            </div>
+
+            <div id="closingMenu" class="closing-menu">
+                <img   class="closing-menu__img" src="/images/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Ikonka hamburger menu">
+            </div>
+        </div>
+
+        <nav class="menu" id="menu">  
+    <ul class="menu__list">
+        <li class="menu__item menu__top-item menu__top-item--home">
+            <a class="menu__link" href="/">Home</a>
+        </li>
+        <li class="menu__item menu__top-item menu__top-item--destinace">
+            <a class="menu__link menu__link--nohand" href="#">Destinace</a>
+            <ul class="menu__list menu__sublist">
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink " href="/spanelsko/">Španělsko</a></li>
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/francie/">Francie</a></li>
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/slovinsko/">Slovinsko</a></li>
+            </ul>
+        </li>
+        <li class="menu__item menu__top-item">
+            <a class="menu__link menu__link--nohand" href="#">Deníky</a>
+            <ul class="menu__list menu__sublist">
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
+            </ul>
+        </li>
+        <li class="menu__item menu__top-item menu__top-item--fotogalery">
+            <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
+        </li>
+        <li class="menu__item menu__top-item menu__top-item--onas">
+            <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>                           
+            <ul class="menu__list menu__sublist">
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/onas/">Kdo jsme</a></li>
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/bydliky/">Čím cestujeme</a></li>
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/contact/">Napište nám</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    
+            
+    <div class="menu__sm-link-container">
+        <a class="menu__sm-link" href="https://www.facebook.com/profile.php?id=61559479842550">
+            <svg class="menu__facebook menu__sm-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+            <g>
+                <path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"/>
+            </g>
+            </svg>
+        </a>
+        <a class="menu__sm-link" href="https://www.instagram.com/">
+            <svg class="menu__instagram menu__sm-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+                <g>
+                    <path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"/>
+                    <path d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"/>
+                    <circle cx="18.406" cy="5.594" r="1.44"/>
+                </g>
+            </svg>          
+        </a>    
+        <a class="menu__sm-link" href="https://www.youtube.com/">
+            <svg class="menu__youtube menu__sm-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+            <g id="XMLID_184_">
+                <path d="M23.498,6.186c-0.276-1.039-1.089-1.858-2.122-2.136C19.505,3.546,12,3.546,12,3.546s-7.505,0-9.377,0.504   C1.591,4.328,0.778,5.146,0.502,6.186C0,8.07,0,12,0,12s0,3.93,0.502,5.814c0.276,1.039,1.089,1.858,2.122,2.136   C4.495,20.454,12,20.454,12,20.454s7.505,0,9.377-0.504c1.032-0.278,1.845-1.096,2.122-2.136C24,15.93,24,12,24,12   S24,8.07,23.498,6.186z M9.546,15.569V8.431L15.818,12L9.546,15.569z"/>
+            </g>
+            </svg>
+        </a>
+
+    </div>   
+
+
+    <input type="checkbox" id="click">
+    <label class="menu-label" for="click">
+        <div class="icons-container">
+            <img   class="hamburger" src="/images/hamburgermenu.svg" alt="Ikonka hamburger menu">
+            <img   class="closing" src="/images/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Ikonka hamburger menu">
+        </div>
+    </label>  
+     
+    <ul class="menu__list menu--side">
+            <li class="menu__item menu__top-item menu--side__top-item">
+                <a class="menu__link" href="/">Home</a>
+            </li>
+            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--destinace">
+                <a class="menu__link menu__link--nohand" href="#">Destinace</a>
+                <ul class="menu__list menu__sublist menu--side__sublist">
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/spanelsko/">Španělsko</a></li>
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/francie/">Francie</a></li>
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/slovinsko/">Slovinsko</a></li>
+                </ul>
+            </li>
+            <li class="menu__item menu__top-item menu--side__top-item">
+                <a class="menu__link menu__link--nohand" href="#">Deníky</a>
+                <ul class="menu__list menu__sublist menu--side__sublist">
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
+                </ul>
+            </li>
+            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--fotogalery">
+                <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
+            </li>
+            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--onas">
+                <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>                           
+                <ul class="menu__list menu__sublist menu--side__sublist">
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/onas/">Kdo jsme</a></li>
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/bydliky/">Čím cestujeme</a></li>
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/contact/">Napište nám</a></li>
+                </ul>
+            </li>
+         </ul>
+</nav>    
+
+ 
+        
+
+   
+    </header>
+
+    
+<hero class="article__hero">
+   <img class="article__main-img" srcset="/images/Faro_de_caballo/main_small.jpg 650w, /images/Faro_de_caballo/main_middle.jpg 950w, /images/Faro_de_caballo/main_big.jpg 1250w, /images/Faro_de_caballo/main_large.jpg 2000w, /images/Faro_de_caballo/main_superlarge.jpg 2500w" src="/images/Faro_de_caballo/main_middle.jpg" alt="Pohled na maják Faro de Caballo z výšky">
+   <div class="article__title-container claim-container">
+      <h1 class="article__title "> NEDOSTUPNÝ MAJÁK</h1>
+   </div>
+</hero>
+
+    <main class="article-main">  
+        <article class="article">
+         <p class="article__date">Publikováno 16. 5. 2024 9:26:49 </p>
+<h3 class="article__caption"> Sice trochu hůře dostupné, ale naprosto úchvatné místo pro výlet po souši nebo po moři. </h3>
+<p class="article__perex"> Faro de Caballo, aneb Koňský maják, se nachází na úpatí hory Buciero  a svou polohou nabízí jeho návštěva jedinečný zážitek s dechberoucími výhledy na moře a útesy. Nenechte se jeho lehkou nedostupností odradit, atmosféra tohoto místa Vám vynaložené úsilí plně vynahradí. </p> 
+
+                <p>Faro de Caballo, aneb Koňský maják, se nachází na úpatí hory Buciero  a svou polohou nabízí jeho návštěva jedinečný zážitek s dechberoucími výhledy na moře a útesy. Nenechte se jeho lehkou nedostupností odradit, atmosféra tohoto místa Vám vynaložené úsilí plně vynahradí.</p>
+<p>Po souši k němu můžete zvolit několik tras ze Santoňi nebo z pláže de Berilla a kromě lesních nezpevněných cest budete po cestě k němu muset zdolat 763 schodů. Schody mohou být pro leckoho těžkým oříškem, neb jsou  v některých místech velmi strmé a velmi úzké. Podél schodů je nicméně lano, jehož se můžete přidržovat. Jestliže Vás náročnost tohoto sestupu neodradí, budete odměněni mnona nádhernými pohledy na útesy a mořskou hladinu. Pravdou je, že o dech Vás kromě přírodní scenerie připraví i výstup zpět nahoru.</p>
+<p>Nejdelší trasa kolem celé hory Vám zabere nějaké 4 hodinky a ujdete něco málo přes 10km s převýšením 1015 metrů.
+Na trase narazíte na vojenskou baterii San Felipe, odkud je krásný výhled shora na maják v celé jeho kráse.</p>
+<p>Když budete připravenější, než jsme byli my a přibalíte si plavky a ručník, můžete si na konci sestupu užít osvěžující koupel v průzračné vodě. Pod majákem vede schodiště až k vodní hladině a jsou zde i malé betonové plošiny několik metrů nad vodou, ze kterých se dá skákat.</p>
+<p>Pokud volíte pohodlnější a rychlejší cestu, můžete se k němu dostat lodí ze Santoňského přístavu, nebo z Lareda. Lodě staví v obou městech a na stejnou jízdenku můžete z lodě vystoupit, prohlédnout si město a opět nastoupit. V Santoni naleznete odjezdové místo z El Pasaje de Santoña, přímo před památníkem Juana de la Cosa a turistickou kanceláří. Prohlídka trvá zhruba hodinu a půl a lístky můžete pořídit <a href="https://www.civitatis.com/es/santona/paseo-barco-costa-santona/?aid=2207">zde</a>.
+Lístek vyjde na 13 EUR pro dospělého  6 EUR pro dítě od 4let.
+V Laredu vyjíždí lodě z rybářského přístavu, kde snadno naleznete stánek “Boat trips”.</p>
+<p>Výlet se dá skvěle spojit se sportovní aktivitou, když si zapůjčíte kajak a vydáte se k majáku buď na vlastní pěst, nebo si můžete objednat organizovaný výlet, který trvá zhruba 4 hodiny a stojí 34 EUR za osobu. V ceně je doprovodný člun, průvodce, něco k pití a vybavení na šnorchlování. Rezervaci je třeba udělat 24 hodin předem a můžete tak učinit <a href="https://www.civitatis.com/es/santona/tour-kayak-faro-caballo/?aid=2207">zde</a>.</p>
+<p>Chcete-li více informací o majáku a jednotlivých trasách navštivte &lt;<a href="https://farodelcaballo.es/">stránky Faro del Caballo</a>.</p>
+<p>Trocha historie : provoz majáku byl zahájen 31. srpna 1863. Strmé schody, položili vězni kasáren Santoña Presidio a v původní podobě zde stála válcová věž s lucernou a patrový dům sloužící jako obydlí pro správce majáku.</p>
+<p>V roce 1993 byl provoz ukončen a v roce 1994  bylo obydlí správce strženo, zůstala tedy pouze samotná věž majáku.</p>
+
+            
+        </article>
+    </main>
+
+    
+
+<footer class="footer">
+        <div class="footer__claim-container">
+            <p class="footer__claim-text"> Na každém místě naší země se dá nalézt tolik krásy,</p>
+            <p class="footer__claim-text"> stačí jen vyjít ven ze dveří a rozhlédnout se.</p>
+        </div>
+
+        <div class="footer__info">
+
+            <img class="footer__icon" src="/images/logo-white-justVan.svg" alt="Ikonka karavanu">
+            <p class="copyright">  &copy; Falconies</p>
+            
+        </div>
+    </footer>
+  
+
+    
+    
+   <script>
+
+
+        const menu = document.querySelector(".menu");
+        const header = document.querySelector(".header");
+       
+
+
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const closingMenu = document.querySelector(".closing-menu");
+
+        hamburgerMenu.onclick = function() {
+        document.getElementById("header").style.height = "100vh";
+        document.getElementById("hamburger").style.display = "none";
+        document.getElementById("closingMenu").style.display = "flex";
+        
+        }
+
+
+        closingMenu.onclick = function() {
+        document.getElementById("header").style.height = "60px";
+        document.getElementById("hamburger").style.display = "flex";
+        document.getElementById("closingMenu").style.display = "none";
+        
+        }
+        
+        const container = document.querySelector(".header");
+
+        function checkWidth() {
+        if (window.innerWidth > 600) {
+            document.getElementById("header").style.height = "60px";
+            document.getElementById("hamburger").style.display = "none";
+            document.getElementById("closingMenu").style.display = "none";
+            
+        }
+
+
+        else {
+            document.getElementById("hamburger").style.display = "flex";
+            document.getElementById("header").style.height = "60px";
+                
+        }
+        }
+
+        document.onload = checkWidth;
+        window.onresize = checkWidth;
+    </script>
+    
+
+
+</body>
+</html>

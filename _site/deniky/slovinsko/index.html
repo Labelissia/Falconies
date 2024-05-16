@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedice Slovinsko</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playball&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+   
+<header id="header" class="header">
+        
+        <div class="header__mobile-top-container"> 
+            <a class="header__logo-container" href="/">
+                    <img class="header__logo-img" src="/images/FALCONIES (2).svg" alt="">
+            </a>
+            <div id="hamburger" class="hamburger-menu" >
+                <img   class="hamburger-menu__img" src="/images/hamburgermenu.svg" alt="Ikonka hamburger menu">
+            </div>
+
+            <div id="closingMenu" class="closing-menu">
+                <img   class="closing-menu__img" src="/images/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Ikonka hamburger menu">
+            </div>
+        </div>
+
+        <nav class="menu" id="menu">  
+    <ul class="menu__list">
+        <li class="menu__item menu__top-item menu__top-item--home">
+            <a class="menu__link" href="/">Home</a>
+        </li>
+        <li class="menu__item menu__top-item menu__top-item--destinace">
+            <a class="menu__link menu__link--nohand" href="#">Destinace</a>
+            <ul class="menu__list menu__sublist">
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink " href="/spanelsko/">Španělsko</a></li>
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/francie/">Francie</a></li>
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/slovinsko/">Slovinsko</a></li>
+            </ul>
+        </li>
+        <li class="menu__item menu__top-item">
+            <a class="menu__link menu__link--nohand" href="#">Deníky</a>
+            <ul class="menu__list menu__sublist">
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
+            </ul>
+        </li>
+        <li class="menu__item menu__top-item menu__top-item--fotogalery">
+            <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
+        </li>
+        <li class="menu__item menu__top-item menu__top-item--onas">
+            <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>                           
+            <ul class="menu__list menu__sublist">
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/onas/">Kdo jsme</a></li>
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/bydliky/">Čím cestujeme</a></li>
+                <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/contact/">Napište nám</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    
+            
+    <div class="menu__sm-link-container">
+        <a class="menu__sm-link" href="https://www.facebook.com/profile.php?id=61559479842550">
+            <svg class="menu__facebook menu__sm-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+            <g>
+                <path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"/>
+            </g>
+            </svg>
+        </a>
+        <a class="menu__sm-link" href="https://www.instagram.com/">
+            <svg class="menu__instagram menu__sm-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+                <g>
+                    <path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"/>
+                    <path d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"/>
+                    <circle cx="18.406" cy="5.594" r="1.44"/>
+                </g>
+            </svg>          
+        </a>    
+        <a class="menu__sm-link" href="https://www.youtube.com/">
+            <svg class="menu__youtube menu__sm-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+            <g id="XMLID_184_">
+                <path d="M23.498,6.186c-0.276-1.039-1.089-1.858-2.122-2.136C19.505,3.546,12,3.546,12,3.546s-7.505,0-9.377,0.504   C1.591,4.328,0.778,5.146,0.502,6.186C0,8.07,0,12,0,12s0,3.93,0.502,5.814c0.276,1.039,1.089,1.858,2.122,2.136   C4.495,20.454,12,20.454,12,20.454s7.505,0,9.377-0.504c1.032-0.278,1.845-1.096,2.122-2.136C24,15.93,24,12,24,12   S24,8.07,23.498,6.186z M9.546,15.569V8.431L15.818,12L9.546,15.569z"/>
+            </g>
+            </svg>
+        </a>
+
+    </div>   
+
+
+    <input type="checkbox" id="click">
+    <label class="menu-label" for="click">
+        <div class="icons-container">
+            <img   class="hamburger" src="/images/hamburgermenu.svg" alt="Ikonka hamburger menu">
+            <img   class="closing" src="/images/close_FILL0_wght400_GRAD0_opsz24.svg" alt="Ikonka hamburger menu">
+        </div>
+    </label>  
+     
+    <ul class="menu__list menu--side">
+            <li class="menu__item menu__top-item menu--side__top-item">
+                <a class="menu__link" href="/">Home</a>
+            </li>
+            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--destinace">
+                <a class="menu__link menu__link--nohand" href="#">Destinace</a>
+                <ul class="menu__list menu__sublist menu--side__sublist">
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/spanelsko/">Španělsko</a></li>
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/francie/">Francie</a></li>
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/slovinsko/">Slovinsko</a></li>
+                </ul>
+            </li>
+            <li class="menu__item menu__top-item menu--side__top-item">
+                <a class="menu__link menu__link--nohand" href="#">Deníky</a>
+                <ul class="menu__list menu__sublist menu--side__sublist">
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
+                </ul>
+            </li>
+            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--fotogalery">
+                <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
+            </li>
+            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--onas">
+                <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>                           
+                <ul class="menu__list menu__sublist menu--side__sublist">
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/onas/">Kdo jsme</a></li>
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/bydliky/">Čím cestujeme</a></li>
+                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/contact/">Napište nám</a></li>
+                </ul>
+            </li>
+         </ul>
+</nav>    
+
+ 
+        
+
+   
+    </header>
+
+    
+<hero class="article__hero">
+   <img class="article__main-img" srcset="/images/exp_slovinsko/main_small.jpg 600w, /images/exp_slovinsko/main_big.jpg 900w, /images/exp_slovinsko/main_large.jpg 1500w, /images/exp_slovinsko/main.jpg 1920w" src="/images/exp_slovinsko/main_big.jpg" alt="neco">
+   <div class="article__title-container claim-container">
+      <h1 class="article__title "> EXPEDICE SLOVINSKO</h1>
+   </div>
+</hero>
+
+    <main class="article-main">  
+        <article class="article">
+         <p class="article__date">Publikováno 16. 5. 2024 9:26:49 </p>
+<h3 class="article__caption"> Z Kostomlátek do Benátek, tam a zase zpátky </h3>
+<p class="article__perex"> V roce 2017 jsme strávili nádherných 10 dní cestováním po Slovinsku a kousku Itálie. Byl to poměrně dobrodružný výlet, neb to byla první takto velká cesta s naším retro obytňáčkem, Ávinkou a také delší dovolená společně s dětmi. Užili jsme si moře, jezera, města i rakouskou “Hochalpenstrasse” a tak se dá říci, že tato cesta prověřila jak spolehlivost naší Ávinky a automechanické schopnosti hlavního technika této výpravy, tak psychickou odolnost všech členů. </p> 
+
+                <h2 class="expeditions-article__route-title">Přesná trasa</h2>
+    <p class="expeditions-article__route">Kostomlátky - Bratislava - Fertöd (Neziderské jezero) - Maribor - Bledské jezero - Bohyňské jezero - Tolmin - Piran - Grado - Benátky - Dürensee - Kostomlátky</p> 
+    <h2 class="expeditions-article__members-title">Účastníci zájezdu</h2>
+    <div class="members">
+        <div class="members__item">
+            <div class="members__foto-container">
+                <img class="members__foto" src="/images/portraits/jarda_small.jpg" alt="Mala portretni fotografie">
+            </div>        
+            <div class="members__description">
+                <h4  class="members__name">Jarda</h4>
+                <h5 class="members__function">Hlavní technik a automechanik</h5>
+            </div>
+        </div>
+        <div class="members__item">
+            <div class="members__foto-container">
+                <img class="members__foto" src="/images/portraits/kata_small.jpg" alt="Mala portretni fotografie">
+            </div>
+            <div class="members__description">
+                <h4 class="members__name">Katka</h4>
+                <h5 class="members__function">Hlavní navigátor a tetrisář</h5>
+            </div>
+        </div>
+        <div class="members__item">
+            <div class="members__foto-container">
+                <img class="members__foto" src="/images/portraits/dan1_small.jpg" alt="Mala portretni fotografie">
+            </div>
+            <div class="members__description">
+                <h4 class="members__name">Dan</h4>
+                <h5 class="members__function">Hlavní pohodář a vypravěč vtipů</h5>
+            </div>
+        </div>
+        <div class="members__item">
+            <div class="members__foto-container">
+                <img class="members__foto" src="/images/portraits/eli.jpg" alt="Mala portretni fotografie">
+            </div>
+            <div class="members__description">
+                <h4 class="members__name">Eliška</h4>
+                <h5 class="members__function">Hlavní udržovatel pořádku</h5>
+            </div>
+        </div>
+    </div>
+ <div class="expedition">
+<p>Zároveň jsme tak svým způsobem okusili krásu tzv. “pomalého cestování” ….. naše Ávinka jela maximálně rychostí 70 až 80 km/h pokud měla správný sklon vozovky a vítr v zádech.
+Ovšem při delším stoupání jsme byli rádi i za 30km/h. Měli jsme tak dostatek času na obdivování krajiny naslouchání všem zvukům motoru. Zasvěcenci si jistě již umí trochu představit, jaká dobrodružství a výzvy přináší cestování Ávií. Pokud jste se ale nikdy neocitli blíže tomuto skvělému vozidlu a zajímá Vás to více, můžete se těšit na náš článek věnovaný naší Ávince, který pro Vás už připravujeme.</p>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--left" srcset="/images/exp_slovinsko/den1_small.jpg 400w, /images/exp_slovinsko/den1_middle.jpg 600w, /images/exp_slovinsko/den1.jpg 900w" src="/images/exp_slovinsko/den1.jpg" alt="Západ slunce nad dálnicí">
+<h3 class="expedition__day">1.den - středa 5.7.2017</h3>
+<p>Po maximálním úsilí nanosit celou domácnost do Ávinky jsme úspěšně v 15:00 opustili náš dům. Jídla máme tak na dva měsíce, dva týdny dovolené tedy nejspíše přežijeme.ve 20:09 nás vítá Slovensko dramatickou oblohou  a deštěm.</p>
+<p>Maďarsko - bouřka přes celé nebe. Děti koukají na film, my na blesky a modlíme se, ať nás to neodfoukne ze silnice. Míjíme obrovská pole větrníků a červených světlušek. Bouře pokračují i v průběhu zbytku cesty. I po vyplácání poloviny silikonu na střešní okno stále kape dovnitř.</p>
+<p>Ve 22:30 parkujme na jižním konci Neziderského jezera u ptačí rezervace. Obloha se vyčistila a noc je klidná.</p>
+</div>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--right" srcset="/images/exp_slovinsko/den2_small.jpg 400w, /images/exp_slovinsko/den2_middle.jpg 600w, /images/exp_slovinsko/den2_big.jpg 1200w, /images/exp_slovinsko/den2_large.jpg 1800w" src="/images/exp_slovinsko/den2_big.jpg" alt="Ávie stojící na louce">
+<h3 class="expedition__day expedition__day--right">2.den - čtvrtek 6.7.2017 Neziderské jezero</h3>
+<p>Budí nás sluníčko, vítr ženoucí se přes maďarskou pampu a křik divokých hus. Stojíme přímo u jedné z mnoha dřevěných rozhleden, ze kterých je nádherný výhled na jezero a ptačí rezervaci.</p>
+<p>První vážnější oprava - při předletovou kontrolou jsme objevili vyklepaný chobot od marky na olej. Bez opravy bychom zůstali velmi brzy někde viset se zadřeným motorem.</p>
+<p>V 9:05 vyrážíme n objezd jezera, ale jsme moc velcí a těžcí a tak nesplňujeme některé limity a pokorně se musíme kus vrátit. Vesele vyrážíme na cestu abychom v 10:30 provedli nucenou zastávku a druhou vážnější opravu, neb Rozárka přestala dofoukávat.</p>
+<p>Nicméně jsme zastávku využili k návštěvě blízkého kamenného divadla, kde je i muzeum věnující se prehistorii. Největší úspěch tu ale slaví ocelové vysoké schodiště - děti po něm nějakou dobu běhají nahoru a dolu.</p>
+<p>14:30 vjíždíme do Slovinska. Je hrozné vedro a děti se hrozně nudí. Buď musíme někde co nejdříve zastavit u čehokoliv tekoucího, nebo je nechat běžet za autem.</p>
+<p>Vstup do Slovinska prověřil i naše navigátorské ,opravářské i komunikační schopnosti. Já zjistila, že moje mapa je zastaralá a nutně potřebuji novou… Jarda zjistil, že Ávinka se chová divně a hrozí vážná porucha a je tedy nutné, co nejdříve najít místo, kde to opraví. Napětí mezi nervózním hlavním technikem a navigátorem hrozilo přerůst ve vážnější konflikt.</p>
+<p>Naštěstí se podařilo najít klidné místo u velmi příjemného jezírka, kde se skvěle koupalo. Tedy já a děti jsme se vesele koupali a Jarda domlouval Ávince, aby se umoudřila a ještě nás kus povozila. Klouzající spojku nakonec vyřešil hasičský přístroj. Jarda dokončil promněnu na Aviaticmana. Aneb “Kdo nemá spáleniny na rukou, a oblečení celé černé, jako by Ávii neřídil.”</p>
+<p>Kolem 19 hodiny přijíždíme do Mariboru. Město nás ničím neuchvátilo, ale pohled na řeku a zvedající se pohoří za ní, byl moc hezký.</p>
+<p>Nocujeme na odstavné ploše u silnice, ale výběr nebyl šťastný. nikdo se moc nevyspal.</p>
+</div>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--left" srcset="/images/exp_slovinsko/den3_small.jpg 400w, /images/exp_slovinsko/den3_middle.jpg 600w, /images/exp_slovinsko/den3_big.jpg 1200w, /images/exp_slovinsko/den3_large.jpg 1800w" src="/images/exp_slovinsko/den3_big.jpg" alt="Jezero Bled">
+<h3 class="expedition__day expedition__day--left">3.den - 7.7.2017 Bledské jezero</h3>
+<p>Vyrážíme v dešti směr Bledské jezero, kam dorážíme akorát na oběd a zkoušíme místní restauraci s velmi uspokojivým výsledkem.</p>
+<p>Abychom vytrávili, vydali jsme se k místnímu hradu, ale 40 EU za vstup se nám dávat nechtělo a tak byla místní plovárna jasnou volbou.</p>
+<p>Koupání s výhledem na hory bylo skvělé a děti byly nadšené z tobogánu, skokánku a vodní házené. Navíc jsme netušili, co se v tomto jezeře skrývá pod hladinou. Pokud se rozhodnete vydat na tuto Bledskou plovárnu, nezapomeňte si přibalit potápěcí brýle, protože při potápění, budete moct obdivovat neuvěřitlné kapří obry.</p>
+<p>Večer jsme koupili maso a přejeli si ho ugrilovat k řece Bohyňce, kde jsme plánovali ponor s lososy. Po večeři jsme za světel pochodní naši Ávinku konečně řádně pokřtili na Rozárku.</p>
+<p>Noční klid nám narušil pán, který nás vyhnal z parkoviště, že tam v noci nesmíme parkovat. Přejeli jsme o padesát metrů vedle a šli vesele spát.</p>
+</div>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--right" srcset="/images/exp_slovinsko/den4_small.jpg 400w, /images/exp_slovinsko/den4_middle.jpg 600w, /images/exp_slovinsko/den4_big.jpg 1200w, /images/exp_slovinsko/den4_large.jpg 1800w" src="/images/exp_slovinsko/den4_big.jpg" alt="Ávie stojící na parkovišti">
+<h3 class="expedition__day expedition__day--right">4.den - 8.7.2017 Bohyňka, ponor s lososy a Bohyňské jezero</h3>
+<p>Po ranní kávičce nasazujeme neoprény, zapínáme vodní kamerky a hurá do studených vod Bohyňky. Stupňů věru neměla mnoho, ale zato lososů mnoho. Vždycky jsme přešli kus proti proudu a pak se kus nechali unášet a prohlíželi si a natáčeli krásně zbarvená rybí tělíčka. I Eliška se k ponoru nechala přemluvit.</p>
+<p>Když jsme rozmrzli, vydali jsme se k Bohyňskému jezeru, kde jsme chtěli přespat v kempu, ale cena byla poměrně mimo náš budget a navíc byl kemp skoro úplně narvaný. Vydali jsme se tedy alespoň na nákup, který se protáhl na procházku kolem celého jezera. Zážitek z nádherných výhledů nám trochu kazila Eliška, neb byla dost nervózní, že nestineme včas odjet z parkoviště. Stejně jako na mnohých místech i tady v noci na parkovišti platí přísný zákaz stání karavanů.</p>
+<p>Nocovali jsme tedy opět u řeky Bohyňky na stejném místě , před cedulí u parkovištátka.</p>
+</div>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--left" srcset="/images/exp_slovinsko/den5_small.jpg 400w, /images/exp_slovinsko/den5_middle.jpg 600w, /images/exp_slovinsko/den5_big.jpg 1200w, /images/exp_slovinsko/den5_large.jpg 1800w" src="/images/exp_slovinsko/den5_big.jpg" alt="Snídaně v Ávii">
+<h3 class="expedition__day expedition__day--left">5.den - 9.7.2017 Den Bohyňské jezero </h3>
+<p>V 7:30 jsme chtěli na dané parkoviště přejet, ale bohužel zrovna přijela hlídka a chtěla 80EU za osobu. Ukecali jsme to na 40EU celkem. Kdybychom vstali o 30minut dříve a přeparkovali, měli bychom to bez pokuty. Další příklady toho, jak je dlouhé spaní škodlivé 🙂</p>
+<p>Znovu jsme přejeli k Bohyňskému jezeru a šli se podívat na vodopád Savica, vede k němu 553 schodů.. zkoušeli jsme to počítat, ale každý došel k uplne jinému cislu ... moc hezký, ale nedá se dojít až k němu jen k vyhlídce…</p>
+<p>Poté jsme děti přesvědčili k výstupu k Černému jezeru. Strmé stoupání a 1,5 hodinový výstup s převýšením cca 850 metru po klikaté cestě je nejprve moc nenadchl,  ale nakonec se z Elišky vyklubal rozený kamzík a Dan se smířil s osudem.</p>
+<p>Jak se nám otevírali výhledy, byli jsme čím dál nadšenějsi a nadsenejší.... svah jsme zdolali a černé jezero bylo nadherne. Zpět chtěli děti stejnou cestou .... no zlatý výstup nahoru, dolu to bolelo trojnasobně!</p>
+<p>Zdolávání hor jsme završili lanovkou na Vogel - převýšení 957 metru a výška 1535m. Nahoře hroozně fučelo, ale výhled vskutku impozantní.... pak už jsme sjeli lanovkou k Rózince a vydali se na jih.</p>
+<p>Nocovali jsme v kempu blízko Tolminu za 40Eu.</p>
+</div>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--right" srcset="/images/exp_slovinsko/den6_small.jpg 400w, /images/exp_slovinsko/den6_middle.jpg 600w, /images/exp_slovinsko/den6_big.jpg 1200w, /images/exp_slovinsko/den6_large.jpg 1800w" src="/images/exp_slovinsko/den6_big.jpg" alt="Řeka Soča">
+<h3 class="expedition__day expedition__day--right">6.den - 10.7.2017 Reka Soča a Skočjanské jeskyně</h3>
+<p>Po cestě do Skočjanských jeskyní jsme projížděli kolem řeky Soči, která má vzhled krásně azurové aviváže díky vápencovým oblastem, kterými protéká. Nemohli jsme nezastavit na pořádnou koupel.
+Odpoledne jsme věnovali návštěvě Skočjanských krápníkových jeskyní, kde nás asi nejvíc zaujalo, jak velké jsou.</p>
+<p>Dalším plánem bylo dojet do Piranu, najít krasné místo na spaní a v úterý si užít Piran... ovšem netušili jsme, že najít takové místo u Piranu bude tak težké... dojeli jsme až k Chorvatským hranicím a nic. Kempy přeplněné, opuštěné pláže nikde... do Chorvatska jsme nechtěli, tak jsme se vrátili k Piranu a zůstali na zastrčeém parkovišti i přes zákaz stání pro karavany a po rychlé koupčce se vydali po cesticče kolem moře do Města na jídlo.</p>
+<p>Průvodci nekecali, Piran je úžasné město a v jeho úzkých uličkách by člověk mohl bloudit do nekonečna a lovit fotogenická zákoutíčka.</p>
+<p>Cesta zpět po nočním pobřeží ve tmě za zvuku přiboje byla nádherná byť ne pro všechny - Jarda trpěl v sandálech, které ho řrezali a kulhal tak,že jsme se báli, že nedojde a děti kvíleli, že již nemohou a bolí je nožičky. Po návratu jsme se rozhodli raději opustit pro karavanisty nehostinné Slovinsko a přejet do Itálie</p>
+<p>Už při průjezdu Triestem a pohledem na mraky zaparkovaných karavanů nám bylo jasné, žze zde pochodime lépe.</p>
+</div>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--left" srcset="/images/exp_slovinsko/den7_small.jpg 400w, /images/exp_slovinsko/den7_middle.jpg 600w, /images/exp_slovinsko/den7_big.jpg 1200w, /images/exp_slovinsko/den7_large.jpg 1800w" src="/images/exp_slovinsko/den7_big.jpg" alt="Grilování na pláži">
+<h3 class="expedition__day expedition__day--left">7.den - 11.7.2017  Grado</h3>
+<p>Vzhledem k tomu, že v Gradu jsme na karavanovém stání za 5EU na den zaparkovali ve dvě noci, nevstávali jsme úplně časně. Dan smutně hlásil, že v průběhu noci zabil asi 15komárů. Velkou část dne jsme strávili na pláži - , dovádění v moři, mušličky, focení a úžasná grilovačka.</p>
+<p>Když se slunce začalo klonit k obzoru, pláž se neuvěřitelně rychle vyprázdnila. Již za chvíli jsme zjistili důvod a co nám síly stačily, jsme prchali ke karavanu před neuvěřitelnými mraky neuvěřitelně hladových komárů. Neznalí situace jsme měli přes den nechané otevřené střešní okno……. další půl hodinu jsem s dětmi seděla na obrubníku schovaná pod dekami a Jarda vystříkával biolitem celé auto……</p>
+</div>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--right" srcset="/images/exp_slovinsko/den8_small.jpg 400w, /images/exp_slovinsko/den8_middle.jpg 600w, /images/exp_slovinsko/den8_big.jpg 1200w, /images/exp_slovinsko/den8_large.jpg 1800w" src="/images/exp_slovinsko/den8_big.jpg" alt="Stellplatz v Gradu">
+<h3 class="expedition__day expedition__day--right">8.den - 12.7.2017  Grado </h3>
+<p>Další den jsme ještě věnovali moři a vlnám, přeplavali na blízký ostrov a našli úžasné úlovky - problémem bylo jen, jak je dostat zpět na pláž, protože v plavkách má člověk přeci jen dost málo úložného místa.</p>
+<p>Večer jsme se vydali pěšky do městečka na nějakou dobrou večeři dát si konečně pravou italskou pizzu, na což se Dan těšil už několik dní …. takže si objednal těstoviny . Nicméně tam měli naprosto skvělého platýse, famózní tuňákové carpacio a výborné deserty. Zpět k autu jsme se sotva dovalili a Jarda z posledních sil přejel někam blíže k Benátkám.</p>
+</div>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--left" srcset="/images/exp_slovinsko/den9_small.jpg 400w, /images/exp_slovinsko/den9_middle.jpg 600w, /images/exp_slovinsko/den9_big.jpg 1200w, /images/exp_slovinsko/den9_large.jpg 1800w" src="/images/exp_slovinsko/den9_big.jpg" alt="Lodičky v Benátkách">
+<h3 class="expedition__day expedition__day--left">9.den - 13.7.2017 Benátky </h3>
+<p>Užili jsme si snídani na parkovišti na kraji Benátek s výhledem na moře a vyrazili do Benátek. Za nějakýc 10EU na osobu jsme si koupili lístek na vodní taxi, přičemž nás málem podezřívali z únosu dětí, když jsem si nemohla vzpomenout, kolik jim je.</p>
+<p>Benátky jsou neuvěřitelné - kanály, můstky, zákoutí, obchůdky nejrůznějších barev vůní. Povinný turistický zážitek - jízdu gondolou - jsme si při její ceně 80EU odpustili a šli raději na dobrý oběd.</p>
+<p>Lodí jsme se svezli na Murado,  ostrov sklářů, kde se již od středověku vyrábí tradiční benátské sklo a zrcadla a pak nás již čekala cesta zpět na sever.</p>
+<p>Nocovali jsme na příjemném místě, byť to bylo u silnice. Nicméně tento fakt byl vyvážen pohledem na okolní horské masivy a malebné kaolínové jezírko.</p>
+</div>
+<div class="expedition__part">
+<img class="expedition__img expedition__img--right" srcset="/images/exp_slovinsko/den10_small.jpg 400w, /images/exp_slovinsko/den10_middle.jpg 600w, /images/exp_slovinsko/den10_big.jpg 1200w, /images/exp_slovinsko/den10_large.jpg 1800w" src="/images/exp_slovinsko/den10_big.jpg" alt="Nejvyšší bod rakouské hochalpenstrasse">
+<h3 class="expedition__day expedition__day--right">10.den  - 14.7.2017 Horský přejezd</h3>
+<p>Po příjemné snídani a procházce kolem jezera jsme pokračovali dále směr domov. Já opět coby pilný navigátor hledala nejlepší cestu domů.</p>
+<p>V blízkosti obce Heiligenblut Rozárka opět vypověděla poslušnost. Našli jsme nejbližší parkoviště a Jarda se pustil do hledání závady. Po asi páté Eliščině otázce “Co když to neopraví” jsem usoudila, že bude lepší když opustíme prostor a bylo to skvělé rozhodnutí. Jednak jsme zabránili konfliktu a jednak jsme objevili krásné místo.</p>
+<p>Nějakých 30 minut chůze od parkoviště bylo možné dojít k velkému vodopádu “Gössnitzfall”, kde se proudy vody řítí z více než 80 metrů dolů zarámované skalním masívem a dole halí les do vodní tříště. Po chvilce obdivování jsme se vydali zpět zjistit stav.</p>
+<p>Zpráva nebyla úplně dobrá - rozloučil se s námi alternátor. Což znamenalo, že sice jedeme,ale nedobíjíme.</p>
+<p>Vydáváme se dále na cestu ovšem po chvilce Rozárka opět protestovala. Bohužel to bylo v příkrém kopci, kde silnice stále stoupla dál a dál a vedle nás padal dolů, sice krásný, ale velmi dlouhý a strmý svah. Krásný výhled trochu kazila myšlenka, že pokud Jardovi upadne nějaká součástka a začne se kutálet dolů, nemáme nejmenší šanci ji dohonit ani najít.</p>
+<p>S vynaložením všech svých znalostí a zkušeností Jarda uvádí motor do chodu a stoupáme dál. Nevině se mě ptá</p>
+<p>“Miláčku a nejedeme přes ten Grossglockner?”</p>
+<p>“Nene, ten je tady vlevo!”</p>
+<p>Tak vlevo sice byl, ale my jeli přímo po oné slavné vysokohorské Grossglocknerské silnici vhodné svými esovitými zatáčkami a stoupáním spíše pro motorky než pro naši Ávii. Modlením a silou vůle jsme ji dotlačili rychlostí 20km/h až nahoru…. kde jsme se pokochali výhledem a jali se znovu modlit a tentokrát dvakrát tolik při sjíždění esíček dolů. Báli jsme se, zda nám vydrží brzdy, zda se nepřehřejí.</p>
+<p>Modlení pomohlo a naše zlatá Rozárka ten přejezd přeci jen zvládla i bez alternátoru.</p>
+<p>A byť jsme dojížděli v dost nervózním stavu a s nutným průběžným chlazením a neustálým doléváním vody a v podstatě na jeden zátah ( Jarda se bál, že pokud zastaví, už se mu ji nepodaří na místě rozchodit), přeci jen jsme se šťastně dokodrcali zpět domů.</p>
+   </div>
+  </div>
+
+            
+        </article>
+    </main>
+
+    
+
+<footer class="footer">
+        <div class="footer__claim-container">
+            <p class="footer__claim-text"> Na každém místě naší země se dá nalézt tolik krásy,</p>
+            <p class="footer__claim-text"> stačí jen vyjít ven ze dveří a rozhlédnout se.</p>
+        </div>
+
+        <div class="footer__info">
+
+            <img class="footer__icon" src="/images/logo-white-justVan.svg" alt="Ikonka karavanu">
+            <p class="copyright">  &copy; Falconies</p>
+            
+        </div>
+    </footer>
+  
+
+    
+    
+   <script>
+
+
+        const menu = document.querySelector(".menu");
+        const header = document.querySelector(".header");
+       
+
+
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const closingMenu = document.querySelector(".closing-menu");
+
+        hamburgerMenu.onclick = function() {
+        document.getElementById("header").style.height = "100vh";
+        document.getElementById("hamburger").style.display = "none";
+        document.getElementById("closingMenu").style.display = "flex";
+        
+        }
+
+
+        closingMenu.onclick = function() {
+        document.getElementById("header").style.height = "60px";
+        document.getElementById("hamburger").style.display = "flex";
+        document.getElementById("closingMenu").style.display = "none";
+        
+        }
+        
+        const container = document.querySelector(".header");
+
+        function checkWidth() {
+        if (window.innerWidth > 600) {
+            document.getElementById("header").style.height = "60px";
+            document.getElementById("hamburger").style.display = "none";
+            document.getElementById("closingMenu").style.display = "none";
+            
+        }
+
+
+        else {
+            document.getElementById("hamburger").style.display = "flex";
+            document.getElementById("header").style.height = "60px";
+                
+        }
+        }
+
+        document.onload = checkWidth;
+        window.onresize = checkWidth;
+    </script>
+    
+
+
+</body>
+</html>
