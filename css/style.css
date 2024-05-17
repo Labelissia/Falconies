@@ -477,6 +477,24 @@ body {
 main {
   margin: 0 auto;
 }
+@media only screen and (min-width: 500px) {
+  main {
+    margin: 0 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+@media only screen and (min-width: 1001px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  main {
+    max-width: 1400px;
+  }
+}
 
 img {
   display: block;
@@ -604,7 +622,7 @@ a {
   display: flex;
   position: relative;
   overflow: hidden;
-  /*box-shadow: 0px 5px 5px rgba(0,0,0, 0.2);*/
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   margin-top: 60px;
 }
 @media only screen and (min-width: 601px) {
@@ -647,7 +665,7 @@ a {
   }
 }
 .hero__claim--smaller {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
@@ -1055,9 +1073,10 @@ a {
   .article-teaser--right {
     width: 90%;
     margin: 0 auto 100px;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: calc(60% - 30px) 40%;
     grid-template-rows: auto;
     grid-auto-flow: dense;
+    gap: 30px;
   }
 }
 @media only screen and (min-width: 1001px) {
@@ -1097,9 +1116,9 @@ a {
   .article-teaser--left {
     width: 90%;
     margin: 0 auto 100px;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% calc(60% - 30px);
     grid-template-rows: auto;
-    gap: 100px;
+    gap: 30px;
   }
 }
 @media only screen and (min-width: 1001px) {
@@ -1137,10 +1156,12 @@ a {
 
 .article {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto 20px auto;
   padding: 20px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 1001px) {
+  .article {
+    padding: 20px 50px;
+  }
 }
 .article__hero {
   margin-top: 60px;
@@ -1374,7 +1395,9 @@ a {
 }
 
 .contact-main {
-  width: 100%;
+  width: unset;
+  max-width: unset;
+  margin: unset;
   height: 100vh;
   position: relative;
 }
@@ -1519,9 +1542,7 @@ a {
 }
 
 .main-onas {
-  margin: 60px auto 50px auto;
-  max-width: 1200px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
   padding-top: 40px;
 }
 
@@ -1637,26 +1658,11 @@ a {
 }
 
 .destinace-main {
-  margin: 0;
   padding: 40px 0 10px 0;
-}
-@media only screen and (min-width: 500px) {
-  .destinace-main {
-    margin: 0 20px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px 0 10px 0;
-  }
 }
 @media only screen and (min-width: 1001px) {
   .destinace-main {
-    max-width: 1200px;
-    margin: 0 auto 20px auto;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .destinace-main {
-    max-width: 1400px;
-    margin: 0 auto 20px auto;
+    padding: 100px 0 10px 0;
   }
 }
 
@@ -1676,7 +1682,7 @@ a {
 
 .fotogalerie__info {
   text-align: center;
-  margin: 100px auto;
+  margin: 20px auto;
 }
 
 .foto-main {
