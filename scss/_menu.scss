@@ -237,6 +237,7 @@
         align-items: center;
         height: 60px;
         width:fit-content;
+        gap:10px;
      }
 
      &__sm-link {
@@ -305,6 +306,7 @@
 }
 
 .icons-container {
+    display: none;
     @media only screen and (min-width:601px) and (max-width:900px){
         display: flex;
         height:100%;
@@ -348,4 +350,15 @@
 
 #click:checked ~ label .closing {
     display: flex;
+}
+
+.menu-label {
+    @media only screen and (min-width:901px) {
+        display: none;
+    }
+}
+.checkbox {
+    @media only screen and (min-width:901px) {
+        display: none;
+    }
 }
