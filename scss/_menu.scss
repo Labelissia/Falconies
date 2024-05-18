@@ -136,9 +136,6 @@
     &__sublist {        
         display: none;
         position: absolute;    
-        top: 100%;
-        left: 0;
-        z-index: 2000;   
         background-color: variables.$c-primary; 
         transition: all easy-in-out 100ms;
 
@@ -182,15 +179,7 @@
     } 
     &__sublink {
         white-space: nowrap;
-        background-color: variables.$c-primary;;
     }
-
-    &__top-item:hover &__sublist{
-        visibility: visible;
-        opacity: 1;
-        display: block; 
-        background-color: variables.$c-primary;
-    }  
 /* ikonky šipeček na rozbalování podkategorií v menu*/
 
     &__arrow-container {
@@ -210,10 +199,6 @@
         align-items: center;
         padding-right: 30px;
         z-index: 2000;
-
-        @media only screen and (min-width:901px){
-            display: none;
-        }
     }
 
     &__arrow-container-down {
@@ -227,10 +212,6 @@
         align-items: center;
         padding-right: 30px;
         z-index: 2000;
-
-        @media only screen and (min-width:901px){
-            display: none;
-        }
 
     }
 

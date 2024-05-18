@@ -191,9 +191,6 @@
 .menu__sublist {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 2000;
   background-color: rgb(179, 237, 245);
   transition: all easy-in-out 100ms;
 }
@@ -237,13 +234,6 @@
 }
 .menu__sublink {
   white-space: nowrap;
-  background-color: rgb(179, 237, 245);
-}
-.menu__top-item:hover .menu__sublist {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  background-color: rgb(179, 237, 245);
 }
 @media only screen and (min-width: 901px) {
   .menu__arrow-container {
@@ -262,11 +252,6 @@
   padding-right: 30px;
   z-index: 2000;
 }
-@media only screen and (min-width: 901px) {
-  .menu__arrow-container-right {
-    display: none;
-  }
-}
 .menu__arrow-container-down {
   display: none;
   position: absolute;
@@ -278,11 +263,6 @@
   align-items: center;
   padding-right: 30px;
   z-index: 2000;
-}
-@media only screen and (min-width: 901px) {
-  .menu__arrow-container-down {
-    display: none;
-  }
 }
 .menu__arrow {
   width: 50px;
