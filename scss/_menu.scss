@@ -139,6 +139,7 @@
         background-color: variables.$c-primary; 
         transition: all easy-in-out 100ms;
 
+
         @media only screen and (max-width: 600px){
             display: none;
             flex-wrap: nowrap; 
@@ -179,7 +180,31 @@
     } 
     &__sublink {
         white-space: nowrap;
+        
+        @media only screen and (min-width: 901px){
+            background-color: variables.$c-primary;
+        }
+
     }
+
+    &__top-item:hover &__sublist, &__top-item:active &__sublist{
+
+        @media only screen and (min-width: 901px){
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    &__sublink:hover {      
+
+        @media only screen and (min-width: 901px){
+            background-color: variables.$c-secondary;
+            color: variables.$c-primary;
+        }
+    }
+
+
 /* ikonky šipeček na rozbalování podkategorií v menu*/
 
     &__arrow-container {

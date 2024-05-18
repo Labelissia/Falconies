@@ -236,6 +236,23 @@
   white-space: nowrap;
 }
 @media only screen and (min-width: 901px) {
+  .menu__sublink {
+    background-color: rgb(179, 237, 245);
+  }
+}
+@media only screen and (min-width: 901px) {
+  .menu__top-item:hover .menu__sublist, .menu__top-item:active .menu__sublist {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .menu__sublink:hover {
+    background-color: rgb(42, 100, 118);
+    color: rgb(179, 237, 245);
+  }
+}
+@media only screen and (min-width: 901px) {
   .menu__arrow-container {
     display: none;
   }
