@@ -36,24 +36,58 @@
         </li>
         <li class="menu__item menu__top-item menu__top-item--destinace">
             <a class="menu__link menu__link--nohand" href="#">Destinace</a>
-            <ul class="menu__list menu__sublist">
+
+            <div class="menu__arrow-container menu__arrow-container-right destinace-open" id="destinace-open">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down destinace-close" id="destinace-close">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+        
+
+            <ul class="menu__list menu__sublist menu__sublist--destinace" id="destinace-sublist">
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink " href="/spanelsko/">Španělsko</a></li>
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/francie/">Francie</a></li>
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/slovinsko/">Slovinsko</a></li>
             </ul>
         </li>
-        <li class="menu__item menu__top-item">
+
+        <li class="menu__item menu__top-item menu__top-item-deniky" id="deniky">
             <a class="menu__link menu__link--nohand" href="#">Deníky</a>
-            <ul class="menu__list menu__sublist">
+
+            <div class="menu__arrow-container menu__arrow-container-right deniky-open" id="deniky-open">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down deniky-close" id="deniky-close">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+
+            <ul class="menu__list menu__sublist deniky-sublist" id="deniky-sublist">
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
             </ul>
         </li>
+
         <li class="menu__item menu__top-item menu__top-item--fotogalery">
             <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
         </li>
+
         <li class="menu__item menu__top-item menu__top-item--onas">
-            <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>                           
-            <ul class="menu__list menu__sublist">
+            <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>  
+
+            <div class="menu__arrow-container menu__arrow-container-right onas-open" id="onas-open">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down onas-close" id="onas-close">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+
+            <ul class="menu__list menu__sublist" id="onas-sublist">
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/onas/">Kdo jsme</a></li>
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/bydliky/">Čím cestujeme</a></li>
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/contact/">Napište nám</a></li>
@@ -100,35 +134,65 @@
     </label>  
      
     <ul class="menu__list menu--side">
-            <li class="menu__item menu__top-item menu--side__top-item">
-                <a class="menu__link" href="/">Home</a>
-            </li>
-            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--destinace">
-                <a class="menu__link menu__link--nohand" href="#">Destinace</a>
-                <ul class="menu__list menu__sublist menu--side__sublist">
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/spanelsko/">Španělsko</a></li>
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/francie/">Francie</a></li>
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/slovinsko/">Slovinsko</a></li>
-                </ul>
-            </li>
-            <li class="menu__item menu__top-item menu--side__top-item">
-                <a class="menu__link menu__link--nohand" href="#">Deníky</a>
-                <ul class="menu__list menu__sublist menu--side__sublist">
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
-                </ul>
-            </li>
-            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--fotogalery">
-                <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
-            </li>
-            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--onas">
-                <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>                           
-                <ul class="menu__list menu__sublist menu--side__sublist">
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/onas/">Kdo jsme</a></li>
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/bydliky/">Čím cestujeme</a></li>
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/contact/">Napište nám</a></li>
-                </ul>
-            </li>
-         </ul>
+        <li class="menu__item menu__top-item menu--side__top-item">
+            <a class="menu__link" href="/">Home</a>
+        </li>
+
+        <li class="menu__item menu__top-item menu--side__top-item menu__top-item--destinace">
+            <a class="menu__link menu__link--nohand" href="#">Destinace</a>
+
+            <div class="menu__arrow-container menu__arrow-container-right destinace-open-tablet" id="destinace-open-tablet">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right-tablet" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down destinace-close-tablet" id="destinace-close-tablet">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <ul class="menu__list menu__sublist menu--side__submenu--side__sublist-tabletlist menu--side__sublist-tablet" id="destinace-sublist-tablet">
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/spanelsko/">Španělsko</a></li>
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/francie/">Francie</a></li>
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/slovinsko/">Slovinsko</a></li>
+            </ul>
+        </li>
+        <li class="menu__item menu__top-item menu--side__top-item">
+            <a class="menu__link menu__link--nohand" href="#">Deníky</a>
+
+            
+            <div class="menu__arrow-container menu__arrow-container-right deniky-open-tablet"  id="deniky-open-tablet">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down deniky-close-tablet" id="deniky-close-tablet">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <ul class="menu__list menu__sublist menu--side__sublist menu--side__sublist-tablet deniky-sublist-tablet" id="deniky-sublist-tablet">
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
+            </ul>
+        </li>
+
+        <li class="menu__item menu__top-item menu--side__top-item menu__top-item--fotogalery">
+            <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
+        </li>
+        <li class="menu__item menu__top-item menu--side__top-item menu__top-item--onas">
+            <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>   
+
+            <div class="menu__arrow-container menu__arrow-container-right onas-open-tablet" id="onas-open-tablet">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down onas-close-tablet" id="onas-close-tablet">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <ul class="menu__list menu__sublist menu--side__sublist menu--side__sublist-tablet onas-sublist-tablet" id="onas-sublist-tablet">
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/onas/">Kdo jsme</a></li>
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/bydliky/">Čím cestujeme</a></li>
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/contact/">Napište nám</a></li>
+            </ul>
+        </li>
+    </ul>
 </nav>    
 
  
@@ -147,7 +211,7 @@
 
     <main class="article-main">  
         <article class="article">
-         <p class="article__date">Publikováno 10. 5. 2024 17:37:04 </p>
+         <p class="article__date">Publikováno 18. 5. 2024 9:42:47 </p>
 <h3 class="article__caption"> Sice trochu hůře dostupné, ale naprosto úchvatné místo pro výlet po souši nebo po moři. </h3>
 <p class="article__perex"> Faro de Caballo, aneb Koňský maják, se nachází na úpatí hory Buciero  a svou polohou nabízí jeho návštěva jedinečný zážitek s dechberoucími výhledy na moře a útesy. Nenechte se jeho lehkou nedostupností odradit, atmosféra tohoto místa Vám vynaložené úsilí plně vynahradí. </p> 
 
@@ -189,7 +253,7 @@ V Laredu vyjíždí lodě z rybářského přístavu, kde snadno naleznete stán
     
    <script>
 
-
+//rozbalovani mobilni verze menu
         const menu = document.querySelector(".menu");
         const header = document.querySelector(".header");
        
@@ -212,7 +276,119 @@ V Laredu vyjíždí lodě z rybářského přístavu, kde snadno naleznete stán
         document.getElementById("closingMenu").style.display = "none";
         
         }
+
+//rozbalovani nabidky destinaci mobil
+        const destinaceOpen = document.querySelector(".destinace-open");
+        const destinaceClose = document.querySelector(".destinace-close"); 
         
+        destinaceOpen.onclick = function() {
+        document.getElementById("destinace-sublist").style.display = "flex";
+        document.getElementById("destinace-open").style.display = "none";
+        document.getElementById("destinace-close").style.display = "flex";     
+        document.getElementById("deniky-open").style.display = "none";     
+             
+        
+        }
+
+        destinaceClose.onclick = function() {
+        document.getElementById("destinace-sublist").style.display = "none";
+        document.getElementById("destinace-open").style.display = "flex";
+        document.getElementById("destinace-close").style.display = "none";    
+        document.getElementById("deniky-open").style.display = "flex";    
+            
+        }
+//rozbalovani nabidky destinaci tablet
+        const destinaceOpenTablet = document.querySelector(".destinace-open-tablet");
+        const destinaceCloseTablet = document.querySelector(".destinace-close-tablet"); 
+        
+        destinaceOpenTablet.onclick = function() {
+        document.getElementById("destinace-sublist-tablet").style.display = "flex";
+        document.getElementById("destinace-open-tablet").style.display = "none";
+        document.getElementById("destinace-close-tablet").style.display = "flex";     
+        document.getElementById("deniky-open-tablet").style.display = "none";     
+             
+        
+        }
+
+        destinaceCloseTablet.onclick = function() {
+        document.getElementById("destinace-sublist-tablet").style.display = "none";
+        document.getElementById("destinace-open-tablet").style.display = "flex";
+        document.getElementById("destinace-close-tablet").style.display = "none";    
+        document.getElementById("deniky-open-tablet").style.display = "flex";    
+            
+        }
+
+//rozbalovani nabidky deniky
+        const denikyOpen = document.querySelector(".deniky-open");
+        const denikyClose = document.querySelector(".deniky-close"); 
+        
+        denikyOpen.onclick = function() {
+        document.getElementById("deniky-sublist").style.display = "flex";
+        document.getElementById("deniky-open").style.display = "none";
+        document.getElementById("deniky-close").style.display = "flex";     
+        
+        }
+
+        denikyClose.onclick = function() {
+        document.getElementById("deniky-sublist").style.display = "none";
+        document.getElementById("deniky-open").style.display = "flex";
+        document.getElementById("deniky-close").style.display = "none";     
+        
+        }
+
+//rozbalovani nabidky deniky tablet
+        const denikyOpenTablet = document.querySelector(".deniky-open-tablet");
+        const denikyCloseTablet = document.querySelector(".deniky-close-tablet"); 
+        
+        denikyOpenTablet.onclick = function() {
+        document.getElementById("deniky-sublist-tablet").style.display = "flex";
+        document.getElementById("deniky-open-tablet").style.display = "none";
+        document.getElementById("deniky-close-tablet").style.display = "flex";     
+        
+        }
+
+        denikyCloseTablet.onclick = function() {
+        document.getElementById("deniky-sublist-tablet").style.display = "none";
+        document.getElementById("deniky-open-tablet").style.display = "flex";
+        document.getElementById("deniky-close-tablet").style.display = "none";     
+        
+        }
+//rozbalovani nabidky onas
+        const onasOpen = document.querySelector(".onas-open");
+        const onasClose = document.querySelector(".onas-close"); 
+        
+        onasOpen.onclick = function() {
+        document.getElementById("onas-sublist").style.display = "flex";
+        document.getElementById("onas-open").style.display = "none";
+        document.getElementById("onas-close").style.display = "flex";     
+        
+        }
+
+        onasClose.onclick = function() {
+        document.getElementById("onas-sublist").style.display = "none";
+        document.getElementById("onas-open").style.display = "flex";
+        document.getElementById("onas-close").style.display = "none";     
+        
+        }
+//rozbalovani nabidky onas tablet
+        const onasOpenTablet = document.querySelector(".onas-open-tablet");
+        const onasCloseTablet = document.querySelector(".onas-close-tablet"); 
+        
+        onasOpenTablet.onclick = function() {
+        document.getElementById("onas-sublist-tablet").style.display = "flex";
+        document.getElementById("onas-open-tablet").style.display = "none";
+        document.getElementById("onas-close-tablet").style.display = "flex";     
+        
+        }
+
+        onasCloseTablet.onclick = function() {
+        document.getElementById("onas-sublist-tablet").style.display = "none";
+        document.getElementById("onas-open-tablet").style.display = "flex";
+        document.getElementById("onas-close-tablet").style.display = "none";     
+        
+        }
+
+
         const container = document.querySelector(".header");
 
         function checkWidth() {

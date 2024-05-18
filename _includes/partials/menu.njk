@@ -5,24 +5,58 @@
         </li>
         <li class="menu__item menu__top-item menu__top-item--destinace">
             <a class="menu__link menu__link--nohand" href="#">Destinace</a>
-            <ul class="menu__list menu__sublist">
+
+            <div class="menu__arrow-container menu__arrow-container-right destinace-open" id="destinace-open">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down destinace-close" id="destinace-close">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+        
+
+            <ul class="menu__list menu__sublist menu__sublist--destinace" id="destinace-sublist">
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink " href="/spanelsko/">Španělsko</a></li>
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/francie/">Francie</a></li>
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/slovinsko/">Slovinsko</a></li>
             </ul>
         </li>
-        <li class="menu__item menu__top-item">
+
+        <li class="menu__item menu__top-item menu__top-item-deniky" id="deniky">
             <a class="menu__link menu__link--nohand" href="#">Deníky</a>
-            <ul class="menu__list menu__sublist">
+
+            <div class="menu__arrow-container menu__arrow-container-right deniky-open" id="deniky-open">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down deniky-close" id="deniky-close">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+
+            <ul class="menu__list menu__sublist deniky-sublist" id="deniky-sublist">
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
             </ul>
         </li>
+
         <li class="menu__item menu__top-item menu__top-item--fotogalery">
             <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
         </li>
+
         <li class="menu__item menu__top-item menu__top-item--onas">
-            <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>                           
-            <ul class="menu__list menu__sublist">
+            <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>  
+
+            <div class="menu__arrow-container menu__arrow-container-right onas-open" id="onas-open">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down onas-close" id="onas-close">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+
+            <ul class="menu__list menu__sublist" id="onas-sublist">
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/onas/">Kdo jsme</a></li>
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/bydliky/">Čím cestujeme</a></li>
                 <li class="menu__item menu__subitem"><a class="menu__link menu__sublink" href="/contact/">Napište nám</a></li>
@@ -69,34 +103,64 @@
     </label>  
      
     <ul class="menu__list menu--side">
-            <li class="menu__item menu__top-item menu--side__top-item">
-                <a class="menu__link" href="/">Home</a>
-            </li>
-            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--destinace">
-                <a class="menu__link menu__link--nohand" href="#">Destinace</a>
-                <ul class="menu__list menu__sublist menu--side__sublist">
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/spanelsko/">Španělsko</a></li>
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/francie/">Francie</a></li>
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/slovinsko/">Slovinsko</a></li>
-                </ul>
-            </li>
-            <li class="menu__item menu__top-item menu--side__top-item">
-                <a class="menu__link menu__link--nohand" href="#">Deníky</a>
-                <ul class="menu__list menu__sublist menu--side__sublist">
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
-                </ul>
-            </li>
-            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--fotogalery">
-                <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
-            </li>
-            <li class="menu__item menu__top-item menu--side__top-item menu__top-item--onas">
-                <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>                           
-                <ul class="menu__list menu__sublist menu--side__sublist">
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/onas/">Kdo jsme</a></li>
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/bydliky/">Čím cestujeme</a></li>
-                    <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/contact/">Napište nám</a></li>
-                </ul>
-            </li>
-         </ul>
+        <li class="menu__item menu__top-item menu--side__top-item">
+            <a class="menu__link" href="/">Home</a>
+        </li>
+
+        <li class="menu__item menu__top-item menu--side__top-item menu__top-item--destinace">
+            <a class="menu__link menu__link--nohand" href="#">Destinace</a>
+
+            <div class="menu__arrow-container menu__arrow-container-right destinace-open-tablet" id="destinace-open-tablet">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right-tablet" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down destinace-close-tablet" id="destinace-close-tablet">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <ul class="menu__list menu__sublist menu--side__submenu--side__sublist-tabletlist menu--side__sublist-tablet" id="destinace-sublist-tablet">
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/spanelsko/">Španělsko</a></li>
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/francie/">Francie</a></li>
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/slovinsko/">Slovinsko</a></li>
+            </ul>
+        </li>
+        <li class="menu__item menu__top-item menu--side__top-item">
+            <a class="menu__link menu__link--nohand" href="#">Deníky</a>
+
+            
+            <div class="menu__arrow-container menu__arrow-container-right deniky-open-tablet"  id="deniky-open-tablet">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down deniky-close-tablet" id="deniky-close-tablet">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <ul class="menu__list menu__sublist menu--side__sublist menu--side__sublist-tablet deniky-sublist-tablet" id="deniky-sublist-tablet">
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink " href="/deniky/slovinsko/">Expedice Slovinsko</a></li>
+            </ul>
+        </li>
+
+        <li class="menu__item menu__top-item menu--side__top-item menu__top-item--fotogalery">
+            <a class="menu__link" href="/fotogalerie/">Fotogalerie</a>
+        </li>
+        <li class="menu__item menu__top-item menu--side__top-item menu__top-item--onas">
+            <a class="menu__link menu__link--nohand" href="#">Něco o nás</a>   
+
+            <div class="menu__arrow-container menu__arrow-container-right onas-open-tablet" id="onas-open-tablet">
+                <img class="menu__arrow menu__arrow-right " id="arrow-right" src="/images/sipka_vpravo.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <div class="menu__arrow-container menu__arrow-container-down onas-close-tablet" id="onas-close-tablet">
+                <img class="menu__arrow menu__arrow-down" id="arrow-down" src="/images/sipka_dolu.svg" alt="ikonka sipky dolu">
+            </div>
+
+            <ul class="menu__list menu__sublist menu--side__sublist menu--side__sublist-tablet onas-sublist-tablet" id="onas-sublist-tablet">
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/onas/">Kdo jsme</a></li>
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/bydliky/">Čím cestujeme</a></li>
+                <li class="menu__item menu__subitem menu--side__subitem"><a class="menu__link menu__sublink menu--side__sublink" href="/contact/">Napište nám</a></li>
+            </ul>
+        </li>
+    </ul>
 </nav>    
 

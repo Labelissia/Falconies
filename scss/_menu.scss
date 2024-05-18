@@ -82,18 +82,11 @@
         width: 100%;
         line-height: 60px;
         font-size: 1.3rem;
-        color: variables.$c-primary-dark;
-        background-color: variables.$c-primary;
         text-transform: uppercase;
         text-decoration: none;
         cursor: pointer;
         transition: all easy-in-out 100ms;
 
-
-        @media only screen and (min-width:601px) and (max-width:900px){
-            background-color: rgb(179,237,245, 0.8);              
-            
-        }
 
         @media only screen and (min-width: 901px) and (max-width: 1100px) {
             padding: 0 15px;  
@@ -140,11 +133,12 @@
     
     /*DROPDOWN STYLING START*/
 
-    &__sublist {
-        visibility: hidden;
-        opacity: 0;
+    &__sublist {        
         display: none;
         position: absolute;    
+        top: 100%;
+        left: 0;
+        z-index: 2000;   
         background-color: variables.$c-primary; 
         transition: all easy-in-out 100ms;
 
@@ -153,9 +147,13 @@
             flex-wrap: nowrap; 
             flex-direction: column;
             position: absolute;
-            bottom: -100%;
-            left: 50px;
-            z-index: 2000;            
+            top: 100%;
+            left: 0;
+            z-index: 2000;           
+        }
+
+        @media only screen and (max-width: 900px){
+            background-color: unset;
         }
     }
 
@@ -184,9 +182,65 @@
     } 
     &__sublink {
         white-space: nowrap;
+        background-color: variables.$c-primary;;
     }
 
-    &__top-item:hover &__sublist, &__top-item:active &__sublist{
+    &__top-item:hover &__sublist{
+        visibility: visible;
+        opacity: 1;
+        display: block; 
+        background-color: variables.$c-primary;
+    }  
+/* ikonky šipeček na rozbalování podkategorií v menu*/
+
+    &__arrow-container {
+        @media only screen and (min-width:901px){
+            display: none;
+        }
+    }
+
+    &__arrow-container-right {
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 30px;
+        z-index: 2000;
+
+        @media only screen and (min-width:901px){
+            display: none;
+        }
+    }
+
+    &__arrow-container-down {
+        display: none;
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;        
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 30px;
+        z-index: 2000;
+
+        @media only screen and (min-width:901px){
+            display: none;
+        }
+
+    }
+
+    &__arrow {
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    /*&__top-item:hover &__sublist, &__top-item:active &__sublist{
         visibility: visible;
         opacity: 1;
         display: block;   
@@ -201,30 +255,8 @@
             z-index: 2000;
             
         }
-    }
+    }*/
 
-    &__top-item:hover + &__top-item{
-
-        @media only screen and (max-width: 900px){
-            margin-top: 180px;
-
-        }
-    }
-
-    &__top-item:hover + &__top-item--fotogalery {
-
-        @media only screen and (max-width: 900px){
-            margin-top: 60px;
-
-        }
-    }
-    &__top-item:hover + &__top-item--onas, &__top-item:hover + &__top-item--destinace {
-
-        @media only screen and (max-width: 900px){
-            margin-top: 0px;
-
-        }
-    }
 
     
 
@@ -292,17 +324,27 @@
 
     &__subitem {
         width: 100%;
+        background-color: variables.$c-secondary;
+            color: variables.$c-hover-font;
     }
+
+    &__sublist-tablet{
+        position: absolute;
+        top: 100%;
+        width:100%;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        z-index: 2000;
+    }
+
     &__sublist {
         width: 100%;
         height: 60px;
         z-index: 100;
         top: 100%;
     }
-
-    &__top-item:hover + &__top-item--fotogalery{
-        margin-top: 60px;
-    }
+   
 }
 
 .icons-container {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*colors*/
 /*fonts*/
 .header {
@@ -60,6 +61,23 @@
   height: 100%;
   width: 100%;
   /*DROPDOWN STYLING START*/
+  /* ikonky šipeček na rozbalování podkategorií v menu*/
+  /*&__top-item:hover &__sublist, &__top-item:active &__sublist{
+      visibility: visible;
+      opacity: 1;
+      display: block;   
+
+      @media only screen and (max-width: 600px){
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: 2000;
+
+      }
+  }*/
   /*DROPDOWN STYLING end*/
 }
 @media only screen and (max-width: 600px) {
@@ -129,17 +147,10 @@
   width: 100%;
   line-height: 60px;
   font-size: 1.3rem;
-  color: rgb(24, 35, 36);
-  background-color: rgb(179, 237, 245);
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
   transition: all easy-in-out 100ms;
-}
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  .menu__link {
-    background-color: rgba(179, 237, 245, 0.8);
-  }
 }
 @media only screen and (min-width: 901px) and (max-width: 1100px) {
   .menu__link {
@@ -178,10 +189,11 @@
   }
 }
 .menu__sublist {
-  visibility: hidden;
-  opacity: 0;
   display: none;
   position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2000;
   background-color: rgb(179, 237, 245);
   transition: all easy-in-out 100ms;
 }
@@ -191,9 +203,14 @@
     flex-wrap: nowrap;
     flex-direction: column;
     position: absolute;
-    bottom: -100%;
-    left: 50px;
+    top: 100%;
+    left: 0;
     z-index: 2000;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .menu__sublist {
+    background-color: unset;
   }
 }
 .menu__subitem:nth-child(2) {
@@ -220,37 +237,56 @@
 }
 .menu__sublink {
   white-space: nowrap;
+  background-color: rgb(179, 237, 245);
 }
-.menu__top-item:hover .menu__sublist, .menu__top-item:active .menu__sublist {
+.menu__top-item:hover .menu__sublist {
   visibility: visible;
   opacity: 1;
   display: block;
+  background-color: rgb(179, 237, 245);
 }
-@media only screen and (max-width: 600px) {
-  .menu__top-item:hover .menu__sublist, .menu__top-item:active .menu__sublist {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 2000;
+@media only screen and (min-width: 901px) {
+  .menu__arrow-container {
+    display: none;
   }
 }
-@media only screen and (max-width: 900px) {
-  .menu__top-item:hover + .menu__top-item {
-    margin-top: 180px;
+.menu__arrow-container-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  z-index: 2000;
+}
+@media only screen and (min-width: 901px) {
+  .menu__arrow-container-right {
+    display: none;
   }
 }
-@media only screen and (max-width: 900px) {
-  .menu__top-item:hover + .menu__top-item--fotogalery {
-    margin-top: 60px;
+.menu__arrow-container-down {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  z-index: 2000;
+}
+@media only screen and (min-width: 901px) {
+  .menu__arrow-container-down {
+    display: none;
   }
 }
-@media only screen and (max-width: 900px) {
-  .menu__top-item:hover + .menu__top-item--onas, .menu__top-item:hover + .menu__top-item--destinace {
-    margin-top: 0px;
-  }
+.menu__arrow {
+  width: 50px;
+  height: 50px;
 }
 .menu__sm-link-container {
   flex-grow: 0;
@@ -302,15 +338,23 @@
 }
 .menu--side__subitem {
   width: 100%;
+  background-color: rgb(42, 100, 118);
+  color: rgb(225, 247, 250);
+}
+.menu--side__sublist-tablet {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  z-index: 2000;
 }
 .menu--side__sublist {
   width: 100%;
   height: 60px;
   z-index: 100;
   top: 100%;
-}
-.menu--side__top-item:hover + .menu--side__top-item--fotogalery {
-  margin-top: 60px;
 }
 
 .icons-container {
